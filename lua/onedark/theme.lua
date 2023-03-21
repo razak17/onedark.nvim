@@ -379,4 +379,8 @@ return {
 	IlluminatedWordText = { bg = P.base4, underline = false },
 	IlluminatedWordRead = { bg = P.base4, underline = false },
 	IlluminatedWordWrite = { bg = P.base4, underline = false },
+
+	-- buffer-manager
+	BufferManagerTitle = { fg = P.light_gray },
+	BufferManagerBorder = { link = "FloatBorder" },
 }
