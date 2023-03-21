@@ -34,10 +34,10 @@ colorscheme onedark
 or
 
 ```lua
-vim.cmd.colorscheme('zephyr')
+vim.cmd.colorscheme('onedark')
 ```
 
 ```lua
--- Get zephyr color
-local zephyr =  require('onedark').onedark.yellow/teal/fg/bg
+-- Get onedark color
+local onedark =  require('onedark').onedark.yellow/teal/fg/bg
 ```
