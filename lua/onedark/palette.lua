@@ -14,7 +14,7 @@ return {
 
 	none = "NONE",
 	bg = "#24283b",
-  bg1 = "#504945",
+	bg1 = "#504945",
 	bg_dark = "#1f2335",
 	fg = "#bbc2cf",
 	fg_alt = "#5B6268",
@@ -27,8 +27,8 @@ return {
 
 	gray = "#5c6370",
 	light_gray = "#abb2bf",
-	sign_add = "#587c0c",
-	sign_change = "#0c7d9d",
+	sign_add = "#35b15e",
+	sign_change = "#47a8e5",
 	sign_delete = "#94151b",
 
 	red = "#e95678",
