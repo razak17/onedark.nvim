@@ -258,8 +258,7 @@ return {
 	-- winbar
 	Winbar = { fg = P.light_gray },
 	WinbarCrumb = { link = "Winbar" },
-	WinbarCurrent = { link = "Winbar" },
-	WinbarDirectory = { fg = P.red },
+	WinbarDirectory = { fg = P.cyan },
 
 	-- highlight FIXME comments
 	commentTSWarning = { bg = P.teal, fg = P.base0, bold = true },
