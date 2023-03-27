@@ -1,24 +1,24 @@
 local P = require("onedark.palette")
-local alter = require("onedark.utils").fade
+local tint = require("onedark.utils").tint
 
 return {
 	--------------------------------------------------------------------------------------------------
 	-- Editor
 	--------------------------------------------------------------------------------------------------
-	Normal = { fg = P.fg, bg = alter(P.bg, -40) },
+	Normal = { fg = P.fg, bg = tint(P.bg, -0.4) },
 	NormalFloat = { link = "Normal" },
 	Terminal = { fg = P.fg, bg = P.bg },
 	SignColumn = { link = "Normal" },
 	CursorColumn = { link = "Normal" },
 	FoldColumn = { fg = P.fg_alt, bg = P.black },
-	VertSplit = { fg = alter(P.purple, -50) },
+	VertSplit = { fg = tint(P.purple, -0.5) },
 	Folded = { fg = P.grey, bg = P.dark_alt },
 	EndOfBuffer = { fg = P.bg, bg = P.none },
-	Visual = { bg = alter(P.visual, -60) },
+	Visual = { bg = tint(P.visual, -0.6) },
 	VisualNOS = { link = "Visual" },
-	Search = { fg = P.bg_visual, bg = alter(P.purple, -50) },
+	Search = { fg = P.bg_visual, bg = tint(P.purple, -0.5) },
 	IncSearch = { link = "Search" },
-	CursorLine = { bg = alter(P.bg_highlight, -20) },
+	CursorLine = { bg = tint(P.bg_highlight, -0.2) },
 	ColorColumn = { link = "CursorLine" },
 	Conceal = { fg = P.grey, bg = P.none },
 	Cursor = { fg = P.none, bg = P.none, reverse = true },
@@ -49,7 +49,7 @@ return {
 	PmenuSbar = { fg = P.none, bg = P.dark_grey },
 	PmenuThumb = { bg = P.purple },
 	WildMenu = { fg = P.fg, bg = P.green },
-	StatusLine = { fg = P.base8, bg = alter(P.bg_dark, -20) },
+	StatusLine = { fg = P.base8, bg = tint(P.bg_dark, -0.2) },
 	StatusLineNC = { fg = P.grey, bg = P.bg_dark },
 	Question = { fg = P.yellow },
 	Tabline = { fg = P.base6, bg = P.base2 },
@@ -66,14 +66,14 @@ return {
 	--------------------------------------------------------------------------------------------------
 	NormalNC = { fg = P.fg, bg = P.none },
 	MsgArea = { link = "Normal" },
-	MsgSeparator = { fg = P.base6, bg = alter(P.bg) },
+	MsgSeparator = { fg = P.base6, bg = P.bg },
 	qfFileName = { fg = P.yellowgreen },
 	netrwDir = { fg = P.pink },
 	TabLineFill = { bg = P.bg },
 	WinSeparator = { link = "VertSplit" },
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
-	FloatTitle = { fg = P.fg, bg = alter(P.purple, -60) },
+	FloatTitle = { fg = P.fg, bg = tint(P.purple, -0.6) },
 
 	--------------------------------------------------------------------------------------------------
 	-- Lang
@@ -236,10 +236,10 @@ return {
 	DiagnosticUnderlineInfo = { undercurl = true, sp = P.blue },
 	DiagnosticUnderlineHint = { undercurl = true, sp = P.darker_green },
 
-	DiagnosticVirtualTextError = { fg = P.error_red, bg = alter(P.pale_red, -70) },
-	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = alter(P.dark_orange, -70) },
-	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = alter(P.pale_blue, -70) },
-	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = alter(P.darker_green, -70) },
+	DiagnosticVirtualTextError = { fg = P.error_red, bg = tint(P.pale_red, -0.7) },
+	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = tint(P.dark_orange, -0.7) },
+	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = tint(P.pale_blue, -0.7) },
+	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = tint(P.darker_green, -0.7) },
 
 	--------------------------------------------------------------------------------------------------
 	-- Plugins
@@ -311,12 +311,12 @@ return {
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeResultsBorder = { link = "FloatBorder" },
 	TelescopePromptBorder = { link = "FloatBorder" },
-	TelescopePreviewBorder = { fg = alter(P.blue, -50) },
+	TelescopePreviewBorder = { fg = tint(P.blue, -0.5) },
 	TelescopeMatching = { fg = P.cyan },
 	TelescopeSelection = { link = "CursorLine" },
 	TelescopeSelectionCaret = { fg = P.cyan },
 	TelescopeMultiSelection = { fg = P.light_green },
-	TelescopePromptPrefix = { fg = alter(P.cyan, -30) },
+	TelescopePromptPrefix = { fg = tint(P.cyan, -0.3) },
 	TelescopePromptCounter = { fg = P.purple },
 	TelescopeResultsTitle = { fg = P.light_gray },
 	TelescopePromptTitle = { fg = P.light_gray },
@@ -330,7 +330,7 @@ return {
 
 	-- which-key
 	WhichKey = { fg = P.pink },
-	WhichKeySeparator = { fg = alter(P.cyan, -20) },
+	WhichKeySeparator = { fg = tint(P.cyan, -0.2) },
 	WhichKeyFloat = { link = "Normal" },
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
