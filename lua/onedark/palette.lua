@@ -29,7 +29,7 @@ return {
 	light_gray = "#abb2bf",
 	sign_add = "#35b15e",
 	sign_change = "#47a8e5",
-	sign_delete = "#94151b",
+	sign_delete = "#b4151b",
 
 	red = "#e95678",
 	redwine = "#d16d9e",
