@@ -27,8 +27,8 @@ return {
 
 	gray = "#5c6370",
 	light_gray = "#abb2bf",
-	sign_add = "#35b15e",
-	sign_change = "#47a8e5",
+	sign_add = "#35b13e",
+	sign_change = "#2798e5",
 	sign_delete = "#b4151b",
 
 	red = "#e95678",
