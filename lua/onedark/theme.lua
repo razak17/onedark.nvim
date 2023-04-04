@@ -334,10 +334,7 @@ return {
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
 
-	-- nvim-cmp
-	CmpItemAbbrMatch = { fg = P.purple, bold = true },
-
-	-- nvim-cmp
+	-- null-ls
 	NullLsInfoBorder = { link = "FloatBorder" },
 
 	-- nvim-lspconfig
