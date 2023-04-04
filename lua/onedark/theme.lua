@@ -216,10 +216,6 @@ return {
 	DiagnosticInfo = { fg = P.blue },
 	DiagnosticHint = { fg = P.darker_green },
 
-	LspReferenceRead = { bg = P.base4 },
-	LspReferenceText = { bg = P.base4 },
-	LspReferenceWrite = { bg = P.base4 },
-
 	-- nvim v0.6.0+
 	DiagnosticSignError = { link = "DiagnosticError" },
 	DiagnosticSignWarn = { link = "DiagnosticWarn" },
