@@ -73,7 +73,7 @@ return {
 	WinSeparator = { link = "VertSplit" },
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
-	FloatTitle = { link = 'WildMenu', bold = true },
+	FloatTitle = { link = "WildMenu", bold = true },
 
 	--------------------------------------------------------------------------------------------------
 	-- Lang
