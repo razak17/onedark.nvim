@@ -241,6 +241,9 @@ return {
 	-- Plugins
 	--------------------------------------------------------------------------------------------------
 
+	-- virtcolumn
+	VirtColumn = { link = "FloatBorder" },
+
 	-- git
 	gitcommitSummary = { fg = P.red },
 	gitcommitUntracked = { fg = P.grey },
