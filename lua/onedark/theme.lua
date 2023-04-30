@@ -98,7 +98,7 @@ return {
 	Structure = { fg = P.orange },
 	Operator = { fg = P.light_gray },
 	Title = { fg = P.orange, bold = true },
-	Special = { fg = P.salmon },
+	Special = { fg = P.pink },
 	SpecialChar = { fg = P.yellow },
 	Type = { fg = P.pale_red },
 	Function = { fg = P.blue },
@@ -191,6 +191,11 @@ return {
 	["@query.linter.error"] = { fg = P.error, bg = P.none },
 	["@uri"] = { fg = P.cyan, bg = P.none, underline = true },
 	["@math"] = { fg = P.yellow, bg = P.none },
+  ["@exception.typescript"] = { fg = P.pink, bg = P.none },
+  ["@type.builtin.typescript"] = { fg = P.tsx_green, bg = P.none },
+  ["@lsp.type.class.typescript"] = { fg = P.tsx_green, bg = P.none },
+	["@lsp.type.interface.typescript"] = { fg = P.ts_green, bg = P.none },
+	["@lsp.type.variable.typescript"] = { fg = P.tsx_green, bg = P.none },
 
 	-- Semantic tokens
 	["@lsp.type.namespace"] = { link = "@namespace" },

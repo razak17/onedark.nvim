@@ -41,7 +41,6 @@ return {
 	purple = "#9d7cd8",
 	pink = "#c678dd",
 	pale_pink = "#b490c0",
-	salmon = "#C678DD",
 	visual = "#9745be",
 
 	orange = "#D98E48",
@@ -56,6 +55,8 @@ return {
 	yellowgreen = "#aed75f",
 
 	green = "#89ca78",
+	ts_green = "#8bdb55",
+	tsx_green = "#e5c07b",
 	light_green = "#abcf84",
 	darker_green = "#98c379",
 	dark_green = "#98be65",
