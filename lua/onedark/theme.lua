@@ -191,9 +191,9 @@ return {
 	["@query.linter.error"] = { fg = P.error, bg = P.none },
 	["@uri"] = { fg = P.cyan, bg = P.none, underline = true },
 	["@math"] = { fg = P.yellow, bg = P.none },
-  ["@exception.typescript"] = { fg = P.pink, bg = P.none },
-  ["@type.builtin.typescript"] = { fg = P.tsx_green, bg = P.none },
-  ["@lsp.type.class.typescript"] = { fg = P.tsx_green, bg = P.none },
+	["@exception.typescript"] = { fg = P.pink, bg = P.none },
+	["@type.builtin.typescript"] = { fg = P.tsx_green, bg = P.none },
+	["@lsp.type.class.typescript"] = { fg = P.tsx_green, bg = P.none },
 	["@lsp.type.interface.typescript"] = { fg = P.ts_green, bg = P.none },
 	["@lsp.type.variable.typescript"] = { fg = P.tsx_green, bg = P.none },
 
@@ -308,6 +308,8 @@ return {
 	NeoTreeHiddenByName = { fg = P.base5 },
 	NeoTreeTitleBar = { link = "FloatTitle" },
 	NeoTreeIndentMarker = { link = "Dim" },
+	NeoTreeFileNameOpened = { fg = P.bg_visual, bold = true, underline = true },
+	NeoTreeTabActive = { link = "FloatTitle" },
 
 	-- telescope
 	TelescopeNormal = { fg = P.fg },
