@@ -27,9 +27,9 @@ return {
 
 	gray = "#5c6370",
 	light_gray = "#abb2bf",
-	sign_add = "#35b13e",
-	sign_change = "#2798e5",
-	sign_delete = "#b4151b",
+	sign_add = "#35814e",
+	sign_change = "#2778e5",
+	sign_delete = "#d4151b",
 
 	red = "#e95678",
 	redwine = "#d16d9e",

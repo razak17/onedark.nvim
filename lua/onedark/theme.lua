@@ -275,7 +275,7 @@ return {
 	-- gitsigns
 	GitSignsAdd = { fg = P.sign_add },
 	GitSignsChange = { fg = P.sign_change },
-	GitSignsDelete = { fg = P.error_red },
+	GitSignsDelete = { fg = P.sign_delete },
 	GitSignsChangeDelete = { fg = P.violet },
 	GitSignsAddNr = { fg = P.sign_add },
 	GitSignsChangeNr = { fg = P.sign_change },
