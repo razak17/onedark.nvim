@@ -221,11 +221,25 @@ return {
 	DiagnosticInfo = { fg = P.blue },
 	DiagnosticHint = { fg = P.darker_green },
 
-	-- nvim v0.6.0+
 	DiagnosticSignError = { link = "DiagnosticError" },
 	DiagnosticSignWarn = { link = "DiagnosticWarn" },
 	DiagnosticSignInfo = { link = "DiagnosticInfo" },
 	DiagnosticSignHint = { link = "DiagnosticHint" },
+
+	DiagnosticSignErrorLine = { link = "DiagnosticError" },
+	DiagnosticSignWarnLine = { link = "DiagnosticWarn" },
+	DiagnosticSignInfoLine = { link = "DiagnosticInfo" },
+	DiagnosticSignHintLine = { link = "DiagnosticHint" },
+
+	DiagnosticSignErrorNr = { link = "DiagnosticError" },
+	DiagnosticSignWarnNr = { link = "DiagnosticWarn" },
+	DiagnosticSignInfoNr = { link = "DiagnosticInfo" },
+	DiagnosticSignHintNr = { link = "DiagnosticHint" },
+
+	DiagnosticSignErrorCursorNr = { link = "DiagnosticError" },
+	DiagnosticSignWarnCursorNr = { link = "DiagnosticWarn" },
+	DiagnosticSignInfoCursorNr = { link = "DiagnosticInfo" },
+	DiagnosticSignHintCursorNr = { link = "DiagnosticHint" },
 
 	DiagnosticFloatingError = { link = "DiagnosticError" },
 	DiagnosticFloatingWarn = { link = "DiagnosticWarn" },
@@ -248,16 +262,6 @@ return {
 
 	-- virtcolumn
 	VirtColumn = { link = "FloatBorder" },
-
-	-- git
-	gitcommitSummary = { fg = P.red },
-	gitcommitUntracked = { fg = P.grey },
-	gitcommitDiscarded = { fg = P.grey },
-	gitcommitSelected = { fg = P.grey },
-	gitcommitUnmerged = { fg = P.grey },
-	gitcommitOnBranch = { fg = P.grey },
-	gitcommitArrow = { fg = P.grey },
-	gitcommitFile = { fg = P.dark_green },
 
 	-- winbar
 	Winbar = { fg = P.light_gray },
