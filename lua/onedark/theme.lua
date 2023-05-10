@@ -226,10 +226,10 @@ return {
 	DiagnosticSignInfo = { link = "DiagnosticInfo" },
 	DiagnosticSignHint = { link = "DiagnosticHint" },
 
-	DiagnosticSignErrorLine = { link = "DiagnosticError" },
-	DiagnosticSignWarnLine = { link = "DiagnosticWarn" },
-	DiagnosticSignInfoLine = { link = "DiagnosticInfo" },
-	DiagnosticSignHintLine = { link = "DiagnosticHint" },
+	-- DiagnosticSignErrorLine = { link = "DiagnosticError" },
+	-- DiagnosticSignWarnLine = { link = "DiagnosticWarn" },
+	-- DiagnosticSignInfoLine = { link = "DiagnosticInfo" },
+	-- DiagnosticSignHintLine = { link = "DiagnosticHint" },
 
 	DiagnosticSignErrorNr = { link = "DiagnosticError" },
 	DiagnosticSignWarnNr = { link = "DiagnosticWarn" },
