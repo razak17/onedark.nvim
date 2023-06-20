@@ -251,10 +251,10 @@ return {
 	DiagnosticUnderlineInfo = { undercurl = true, sp = P.blue },
 	DiagnosticUnderlineHint = { undercurl = true, sp = P.darker_green },
 
-	DiagnosticVirtualTextError = { fg = P.error_red, bg = tint(P.pale_red, -0.7) },
-	DiagnosticVirtualTextWarn = { fg = P.dark_orange, bg = tint(P.dark_orange, -0.7) },
-	DiagnosticVirtualTextInfo = { fg = P.pale_blue, bg = tint(P.pale_blue, -0.7) },
-	DiagnosticVirtualTextHint = { fg = P.dark_green, bg = tint(P.darker_green, -0.7) },
+	DiagnosticVirtualTextError = { italic = true, fg = P.error_red, bg = tint(P.pale_red, -0.7) },
+	DiagnosticVirtualTextWarn = { italic = true, fg = P.dark_orange, bg = tint(P.dark_orange, -0.7) },
+	DiagnosticVirtualTextInfo = { italic = true, fg = P.pale_blue, bg = tint(P.pale_blue, -0.7) },
+	DiagnosticVirtualTextHint = { italic = true, fg = P.dark_green, bg = tint(P.darker_green, -0.7) },
 
 	--------------------------------------------------------------------------------------------------
 	-- Plugins
