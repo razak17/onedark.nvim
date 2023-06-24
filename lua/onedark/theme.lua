@@ -66,7 +66,7 @@ return {
 	--------------------------------------------------------------------------------------------------
 	NormalNC = { fg = P.fg, bg = P.none },
 	MsgArea = { link = "Normal" },
-	MsgSeparator = { fg = P.base6, bg = P.bg },
+	MsgSeparator = { fg = P.base7, bg = P.bg },
 	qfFileName = { fg = P.yellowgreen },
 	netrwDir = { fg = P.pink },
 	TabLineFill = { bg = P.bg },
