@@ -321,16 +321,19 @@ return {
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeResultsBorder = { link = "FloatBorder" },
 	TelescopePromptBorder = { link = "FloatBorder" },
-	TelescopePreviewBorder = { fg = tint(P.blue, -0.5) },
-	TelescopeMatching = { fg = P.purple },
+	TelescopePreviewBorder = { link = 'VertSplit' },
+	TelescopeMatching = { link = 'Directory' },
 	TelescopeSelection = { link = "CursorLine" },
-	TelescopeSelectionCaret = { fg = P.purple },
-	TelescopeMultiSelection = { fg = P.purple },
-	TelescopePromptPrefix = { fg = tint(P.cyan, -0.3) },
-	TelescopePromptCounter = { fg = P.purple },
-	TelescopeResultsTitle = { fg = P.light_gray },
-	TelescopePromptTitle = { fg = P.light_gray },
-	TelescopePreviewTitle = { fg = P.light_gray },
+	TelescopeSelectionCaret = { link = 'Exception' },
+	TelescopeMultiSelection = { link = 'CursorLineNr' },
+	TelescopePromptPrefix = { link = 'CursorLineNr' },
+	TelescopePromptCounter = { link = 'CursorLineNr' },
+	TelescopeResultsTitle = { link = 'Operator' },
+	TelescopePromptTitle = { link = 'Operator' },
+	TelescopePreviewTitle = { link = 'Operator' },
+
+  -- picker
+  PickerBorder = {link = 'FloatBorder'},
 
 	-- dashboard
 	DashboardShortCut = { fg = P.darker_blue },
