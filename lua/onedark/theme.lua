@@ -393,4 +393,8 @@ return {
 	-- buffer-manager
 	BufferManagerTitle = { fg = P.light_gray },
 	BufferManagerBorder = { link = "FloatBorder" },
+
+  -- harpoon
+	HarpoonTitle = { fg = P.light_gray },
+	HarpoonBorder = { link = "FloatBorder" },
 }
