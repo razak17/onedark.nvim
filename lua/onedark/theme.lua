@@ -321,19 +321,19 @@ return {
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeResultsBorder = { link = "FloatBorder" },
 	TelescopePromptBorder = { link = "FloatBorder" },
-	TelescopePreviewBorder = { link = 'VertSplit' },
-	TelescopeMatching = { link = 'Directory' },
+	TelescopePreviewBorder = { link = "VertSplit" },
+	TelescopeMatching = { link = "Directory" },
 	TelescopeSelection = { link = "CursorLine" },
-	TelescopeSelectionCaret = { link = 'Exception' },
-	TelescopeMultiSelection = { link = 'CursorLineNr' },
-	TelescopePromptPrefix = { link = 'CursorLineNr' },
-	TelescopePromptCounter = { link = 'CursorLineNr' },
-	TelescopeResultsTitle = { link = 'Operator' },
-	TelescopePromptTitle = { link = 'Operator' },
-	TelescopePreviewTitle = { link = 'Operator' },
+	TelescopeSelectionCaret = { link = "Exception" },
+	TelescopeMultiSelection = { link = "CursorLineNr" },
+	TelescopePromptPrefix = { link = "CursorLineNr" },
+	TelescopePromptCounter = { link = "CursorLineNr" },
+	TelescopeResultsTitle = { link = "Operator" },
+	TelescopePromptTitle = { link = "Operator" },
+	TelescopePreviewTitle = { link = "Operator" },
 
-  -- picker
-  PickerBorder = {link = 'FloatBorder'},
+	-- picker
+	PickerBorder = { link = "FloatBorder" },
 
 	-- dashboard
 	DashboardShortCut = { fg = P.darker_blue },
@@ -394,7 +394,10 @@ return {
 	BufferManagerTitle = { fg = P.light_gray },
 	BufferManagerBorder = { link = "FloatBorder" },
 
-  -- harpoon
+	-- buffer-tabs
+	BufferTabs = { fg = tint(P.purple, -0.2) },
+
+	-- harpoon
 	HarpoonTitle = { fg = P.light_gray },
 	HarpoonBorder = { link = "FloatBorder" },
 }
