@@ -394,6 +394,10 @@ return {
 	BufferManagerTitle = { fg = P.light_gray },
 	BufferManagerBorder = { link = "FloatBorder" },
 
+	-- md-headers
+	MarkdownHeadersTitle = { fg = P.light_gray },
+	MarkdownHeadersBorder = { link = "FloatBorder" },
+
 	-- buffer-tabs
 	BufferTabs = { fg = tint(P.purple, -0.2) },
 
