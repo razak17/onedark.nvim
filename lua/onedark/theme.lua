@@ -16,7 +16,7 @@ return {
 	EndOfBuffer = { fg = P.bg, bg = P.none },
 	Visual = { bg = tint(P.visual, -0.6) },
 	VisualNOS = { link = "Visual" },
-	Search = { fg = P.bg_visual, bg = tint(P.purple, -0.5) },
+	Search = { fg = P.bg_visual, bg = tint(P.purple, -0.7) },
 	IncSearch = { link = "Search" },
 	CursorLine = { bg = tint(P.bg_highlight, -0.2) },
 	ColorColumn = { link = "CursorLine" },
