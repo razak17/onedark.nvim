@@ -64,6 +64,7 @@ return {
 	forest_green = "#6CC644",
 
 	cyan = "#A5D6FF",
+	term_blue = "#3a81c3",
 	dark_cyan = "#65a7c5",
 	blue = "#61afef",
 	light_blue = "#96B8E0",

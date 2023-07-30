@@ -1,7 +1,7 @@
 local P = require("onedark.palette")
 local tint = require("onedark.utils").tint
 
-return {
+local syntax = {
 	--------------------------------------------------------------------------------------------------
 	-- Editor
 	--------------------------------------------------------------------------------------------------
@@ -255,7 +255,9 @@ return {
 	DiagnosticVirtualTextWarn = { italic = true, fg = P.dark_orange, bg = tint(P.dark_orange, -0.7) },
 	DiagnosticVirtualTextInfo = { italic = true, fg = P.pale_blue, bg = tint(P.pale_blue, -0.7) },
 	DiagnosticVirtualTextHint = { italic = true, fg = P.dark_green, bg = tint(P.darker_green, -0.7) },
+}
 
+local Plugin_syntax = {
 	--------------------------------------------------------------------------------------------------
 	-- Plugins
 	--------------------------------------------------------------------------------------------------
@@ -404,4 +406,9 @@ return {
 	-- harpoon
 	HarpoonTitle = { fg = P.light_gray },
 	HarpoonBorder = { link = "FloatBorder" },
+}
+
+return {
+	syntax = syntax,
+	Plugin_syntax = Plugin_syntax,
 }
