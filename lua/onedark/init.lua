@@ -1,8 +1,6 @@
 local theme = require("onedark.theme")
 local P = require("onedark.palette")
 
-local async_load_plugin
-
 local function terminal_color()
 	vim.g.terminal_color_0 = P.bg
 	vim.g.terminal_color_1 = P.red
@@ -28,14 +26,6 @@ local set_hl = function(tbl)
 	end
 end
 
-async_load_plugin = vim.loop.new_async(vim.schedule_wrap(function()
-	terminal_color()
-	set_hl(theme.Plugin_syntax)
-	if async_load_plugin then
-		async_load_plugin:close()
-	end
-end))
-
 local function colorscheme()
 	vim.api.nvim_command("hi clear")
 	if vim.fn.exists("syntax_on") then
@@ -44,10 +34,10 @@ local function colorscheme()
 	vim.o.background = "dark"
 	vim.o.termguicolors = true
 	vim.g.colors_name = "onedark"
+
+  terminal_color()
 	set_hl(theme.syntax)
-	if async_load_plugin then
-		async_load_plugin:send()
-	end
+	set_hl(theme.Plugin_syntax)
 end
 
 colorscheme()
