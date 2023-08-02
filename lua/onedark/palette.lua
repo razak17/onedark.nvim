@@ -40,6 +40,7 @@ return {
 	brown = "#c78665",
 	purple = "#9d7cd8",
 	pink = "#c678dd",
+  dark_pink="#68217A",
 	pale_pink = "#b490c0",
 	visual = "#9745be",
 

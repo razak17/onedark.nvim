@@ -32,7 +32,7 @@ local syntax = {
 	DiffAdd = { fg = P.black, bg = P.forest_green },
 	DiffChange = { fg = P.black, bg = P.yellow },
 	DiffDelete = { fg = P.black, bg = P.red },
-	DiffText = { fg = P.black, bg = P.fg },
+	DiffText = { fg = P.bg_visual, bg = P.dark_pink },
 	Directory = { fg = P.blue, bg = P.none },
 	ErrorMsg = { fg = P.pale_red, bg = P.none, bold = true },
 	WarningMsg = { fg = P.dark_orange, bg = P.none, bold = true },
