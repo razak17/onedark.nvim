@@ -14,16 +14,15 @@ return {
 
 	none = "NONE",
 	bg = "#24283b",
-	bg1 = "#504945",
+	bg_alt = "#373d48",
 	bg_dark = "#1f2335",
+	bg_term = "#504945",
 	fg = "#bbc2cf",
 	fg_alt = "#5B6268",
-	dark = "#2f333b",
-	dark_alt = "#373d48",
+	fg_dark = "#3b4261",
 	comment = "#565f89",
 	bg_highlight = "#292e42",
 	bg_visual = "#b3deef",
-	fg_gutter = "#3b4261",
 
 	gray = "#5c6370",
 	light_gray = "#abb2bf",
@@ -40,7 +39,7 @@ return {
 	brown = "#c78665",
 	purple = "#9d7cd8",
 	pink = "#c678dd",
-  dark_pink="#68217A",
+	dark_pink = "#68217A",
 	pale_pink = "#b490c0",
 	visual = "#9745be",
 

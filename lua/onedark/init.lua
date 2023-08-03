@@ -9,7 +9,7 @@ local function terminal_color()
 	vim.g.terminal_color_4 = P.blue
 	vim.g.terminal_color_5 = P.violet
 	vim.g.terminal_color_6 = P.cyan
-	vim.g.terminal_color_7 = P.bg1
+	vim.g.terminal_color_7 = P.bg_term
 	vim.g.terminal_color_8 = P.brown
 	vim.g.terminal_color_9 = P.red
 	vim.g.terminal_color_10 = P.green
@@ -28,16 +28,15 @@ end
 
 local function colorscheme()
 	vim.api.nvim_command("hi clear")
+	vim.o.background = "dark"
 	if vim.fn.exists("syntax_on") then
 		vim.cmd("syntax reset")
 	end
-	vim.o.background = "dark"
 	vim.o.termguicolors = true
 	vim.g.colors_name = "onedark"
-
-  terminal_color()
 	set_hl(theme.syntax)
-	set_hl(theme.Plugin_syntax)
+	set_hl(theme.plugin_syntax)
+	terminal_color()
 end
 
 colorscheme()

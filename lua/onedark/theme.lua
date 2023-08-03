@@ -5,14 +5,14 @@ local syntax = {
 	--------------------------------------------------------------------------------------------------
 	-- Editor
 	--------------------------------------------------------------------------------------------------
-	Normal = { fg = P.fg, bg = tint(P.bg, -0.6) },
+	Normal = { fg = P.fg, bg = tint(P.bg, -0.3) },
 	NormalFloat = { link = "Normal" },
 	Terminal = { fg = P.fg, bg = P.bg },
 	SignColumn = { link = "Normal" },
 	CursorColumn = { link = "Normal" },
 	FoldColumn = { fg = P.fg_alt, bg = P.black },
 	VertSplit = { fg = tint(P.purple, -0.5) },
-	Folded = { fg = P.grey, bg = P.dark_alt },
+	Folded = { fg = P.grey, bg = P.bg_alt },
 	EndOfBuffer = { fg = P.bg, bg = P.none },
 	Visual = { bg = tint(P.visual, -0.6) },
 	VisualNOS = { link = "Visual" },
@@ -37,7 +37,7 @@ local syntax = {
 	ErrorMsg = { fg = P.pale_red, bg = P.none, bold = true },
 	WarningMsg = { fg = P.dark_orange, bg = P.none, bold = true },
 	ModeMsg = { fg = P.fg, bg = P.none, bold = true },
-	MatchParen = { fg = P.none, bg = P.none, underline = true },
+	MatchParen = { fg = P.fg_alt, bg = P.none, underline = true },
 	MatchWord = { fg = P.none, bg = P.none, underline = true },
 	NonText = { link = "Comment" },
 	Dim = { fg = P.base5 },
@@ -49,18 +49,17 @@ local syntax = {
 	PmenuSbar = { fg = P.none, bg = P.dark_grey },
 	PmenuThumb = { bg = P.dark_grey },
 	WildMenu = { fg = P.bg_visual, bg = tint(P.purple, -0.6) },
-	StatusLine = { fg = P.base8, bg = tint(P.bg_dark, -0.2) },
-	StatusLineNC = { fg = P.grey, bg = P.bg_dark },
+	StatusLine = { fg = P.base8, bg = tint(P.bg, -0.1) },
+	StatusLineNC = { fg = P.grey, bg = tint(P.bg, -0.1) },
 	Question = { fg = P.yellow },
 	Tabline = { fg = P.base6, bg = P.base2 },
-	TabLineSel = { bg = P.dark_alt },
+	TabLineSel = { bg = P.bg_alt },
 	SpellBad = { fg = P.none, bg = P.none, undercurl = true, sp = "green" },
 	SpellCap = { fg = P.none, bg = P.none, undercurl = true },
 	SpellLocal = { fg = P.none, bg = P.none, undercurl = true },
 	SpellRare = { fg = P.none, bg = P.none, undercurl = true },
 	QuickFixLine = { fg = P.black },
 	Debug = { fg = P.orange },
-
 	--------------------------------------------------------------------------------------------------
 	-- Extra (Editor)
 	--------------------------------------------------------------------------------------------------
@@ -74,7 +73,6 @@ local syntax = {
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
 	FloatTitle = { link = "WildMenu" },
-
 	--------------------------------------------------------------------------------------------------
 	-- Lang
 	--------------------------------------------------------------------------------------------------
@@ -110,7 +108,7 @@ local syntax = {
 	Comment = { fg = P.comment },
 	SpecialComment = { fg = P.comment },
 	Todo = { fg = P.orange, italic = true },
-	Delimiter = { fg = P.fg },
+	Delimiter = { fg = P.fg_alt },
 	Ignore = { fg = P.grey },
 	Underlined = { fg = P.none, underline = true },
 	Variable = { fg = P.pale_red },
@@ -119,7 +117,6 @@ local syntax = {
 	Method = { fg = P.green },
 	Class = { fg = P.blue },
 	JsonFold = { fg = P.comment },
-
 	--------------------------------------------------------------------------------------------------
 	-- Treesitter
 	--------------------------------------------------------------------------------------------------
@@ -196,8 +193,9 @@ local syntax = {
 	["@lsp.type.class.typescript"] = { fg = P.tsx_green, bg = P.none },
 	["@lsp.type.interface.typescript"] = { fg = P.ts_green, bg = P.none },
 	["@lsp.type.variable.typescript"] = { fg = P.tsx_green, bg = P.none },
-
+	--------------------------------------------------------------------------------------------------
 	-- Semantic tokens
+	--------------------------------------------------------------------------------------------------
 	["@lsp.type.namespace"] = { link = "@namespace" },
 	["@lsp.type.type"] = { link = "@type" },
 	["@lsp.type.class"] = { link = "@type" },
@@ -214,50 +212,44 @@ local syntax = {
 	["@lsp.type.decorator"] = { link = "@function" },
 	["@lsp.typemod.variable.readonly"] = { link = "@constant" },
 	["@lsp.mod.deprecated"] = { strikethrough = true },
-
+	--------------------------------------------------------------------------------------------------
 	-- LSP
+	--------------------------------------------------------------------------------------------------
 	DiagnosticError = { fg = P.error_red },
 	DiagnosticWarn = { fg = P.dark_orange },
 	DiagnosticInfo = { fg = P.blue },
 	DiagnosticHint = { fg = P.darker_green },
-
 	DiagnosticSignError = { link = "DiagnosticError" },
 	DiagnosticSignWarn = { link = "DiagnosticWarn" },
 	DiagnosticSignInfo = { link = "DiagnosticInfo" },
 	DiagnosticSignHint = { link = "DiagnosticHint" },
-
 	-- DiagnosticSignErrorLine = { link = "DiagnosticError" },
 	-- DiagnosticSignWarnLine = { link = "DiagnosticWarn" },
 	-- DiagnosticSignInfoLine = { link = "DiagnosticInfo" },
 	-- DiagnosticSignHintLine = { link = "DiagnosticHint" },
-
 	DiagnosticSignErrorNr = { link = "DiagnosticError" },
 	DiagnosticSignWarnNr = { link = "DiagnosticWarn" },
 	DiagnosticSignInfoNr = { link = "DiagnosticInfo" },
 	DiagnosticSignHintNr = { link = "DiagnosticHint" },
-
 	DiagnosticSignErrorCursorNr = { link = "DiagnosticError" },
 	DiagnosticSignWarnCursorNr = { link = "DiagnosticWarn" },
 	DiagnosticSignInfoCursorNr = { link = "DiagnosticInfo" },
 	DiagnosticSignHintCursorNr = { link = "DiagnosticHint" },
-
 	DiagnosticFloatingError = { link = "DiagnosticError" },
 	DiagnosticFloatingWarn = { link = "DiagnosticWarn" },
 	DiagnosticFloatingInfo = { link = "DiagnosticInfo" },
 	DiagnosticFloatingHint = { link = "DiagnosticHint" },
-
 	DiagnosticUnderlineError = { undercurl = true, sp = P.error_red },
 	DiagnosticUnderlineWarn = { undercurl = true, sp = P.dark_orange },
 	DiagnosticUnderlineInfo = { undercurl = true, sp = P.blue },
 	DiagnosticUnderlineHint = { undercurl = true, sp = P.darker_green },
-
 	DiagnosticVirtualTextError = { italic = true, fg = P.error_red, bg = tint(P.pale_red, -0.7) },
 	DiagnosticVirtualTextWarn = { italic = true, fg = P.dark_orange, bg = tint(P.dark_orange, -0.7) },
 	DiagnosticVirtualTextInfo = { italic = true, fg = P.pale_blue, bg = tint(P.pale_blue, -0.7) },
 	DiagnosticVirtualTextHint = { italic = true, fg = P.dark_green, bg = tint(P.darker_green, -0.7) },
 }
 
-local Plugin_syntax = {
+local plugin_syntax = {
 	--------------------------------------------------------------------------------------------------
 	-- Plugins
 	--------------------------------------------------------------------------------------------------
@@ -291,7 +283,7 @@ local Plugin_syntax = {
 	GitSignsDeleteLn = { bg = P.bg },
 
 	-- trouble
-	TroubleCount = { bg = P.dark_alt, fg = P.pink },
+	TroubleCount = { bg = P.bg_alt, fg = P.pink },
 	TroubleFile = { fg = P.blue, bold = true },
 	TroubleTextError = { fg = P.red },
 	TroubleTextWarning = { fg = P.yellow },
@@ -379,8 +371,8 @@ local Plugin_syntax = {
 	NotifyTRACEIcon = { link = "DiagnosticHint" },
 
 	-- indent-blankline
-	IndentBlanklineChar = { fg = P.fg_gutter, nocombine = true },
-	IndentBlanklineContextChar = { fg = P.purple, nocombine = true },
+	IndentBlanklineChar = { fg = P.bg_alt, nocombine = true },
+	IndentBlanklineContextChar = { fg = tint(P.purple, -0.1), nocombine = true },
 
 	-- DAP
 	DapBreakpoint = { link = "DiagnosticError" },
@@ -410,5 +402,5 @@ local Plugin_syntax = {
 
 return {
 	syntax = syntax,
-	Plugin_syntax = Plugin_syntax,
+	plugin_syntax = plugin_syntax,
 }

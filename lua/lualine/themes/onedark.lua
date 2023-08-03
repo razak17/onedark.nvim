@@ -1,7 +1,7 @@
 local P = require("onedark.palette")
 local tint = require("onedark.utils").tint
 
-local bg = tint(P.bg_dark, -0.2)
+local bg = tint(P.bg_dark, -0.1)
 local fg = P.base8
 
 return {
