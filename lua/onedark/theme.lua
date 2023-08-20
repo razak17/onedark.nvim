@@ -5,7 +5,7 @@ local syntax = {
 	--------------------------------------------------------------------------------------------------
 	-- Editor
 	--------------------------------------------------------------------------------------------------
-	Normal = { fg = P.fg, bg = tint(P.bg, -0.3) },
+	Normal = { fg = P.fg, bg = tint(P.bg, -0.4) },
 	NormalFloat = { link = "Normal" },
 	Terminal = { fg = P.fg, bg = P.bg },
 	SignColumn = { link = "Normal" },
