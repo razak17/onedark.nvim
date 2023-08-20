@@ -13,6 +13,7 @@ local syntax = {
 	FoldColumn = { fg = P.fg_alt, bg = P.black },
 	VertSplit = { fg = tint(P.purple, -0.5) },
 	Folded = { fg = P.grey, bg = P.bg_alt },
+	Folded = { bg = tint(P.bg_highlight, -0.3), fg = P.comment },
 	EndOfBuffer = { fg = P.bg, bg = P.none },
 	Visual = { bg = tint(P.visual, -0.6) },
 	VisualNOS = { link = "Visual" },
