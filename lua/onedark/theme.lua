@@ -12,7 +12,6 @@ local syntax = {
 	CursorColumn = { link = "Normal" },
 	FoldColumn = { fg = P.fg_alt, bg = P.black },
 	VertSplit = { fg = tint(P.purple, -0.5) },
-	Folded = { fg = P.grey, bg = P.bg_alt },
 	Folded = { bg = tint(P.bg_highlight, -0.3), fg = P.comment },
 	EndOfBuffer = { fg = P.bg, bg = P.none },
 	Visual = { bg = tint(P.visual, -0.6) },
@@ -30,11 +29,11 @@ local syntax = {
 	LineNr = { fg = P.comment },
 	qfLineNr = { fg = P.cyan },
 	CursorLineNr = { fg = P.purple, bold = true },
-	DiffAdd = { fg = P.black, bg = P.forest_green },
-	DiffChange = { fg = P.black, bg = P.yellow },
-	DiffDelete = { fg = P.black, bg = P.red },
-	DiffText = { fg = P.bg_visual, bg = P.dark_pink },
-	Directory = { fg = P.blue, bg = P.none },
+	DiffAdd = { bg = P.diff_add },
+	DiffChange = { bg = P.diff_change },
+	DiffDelete = { bg = P.diff_delete },
+	DiffText = { bg = P.diff_text },
+	directory = { fg = P.blue, bg = P.none },
 	ErrorMsg = { fg = P.pale_red, bg = P.none, bold = true },
 	WarningMsg = { fg = P.dark_orange, bg = P.none, bold = true },
 	ModeMsg = { fg = P.fg, bg = P.none, bold = true },
@@ -282,6 +281,21 @@ local plugin_syntax = {
 	GitSignsAddLn = { bg = P.dark_grey },
 	GitSignsChangeLn = { bg = P.bg_highlight },
 	GitSignsDeleteLn = { bg = P.bg },
+
+	-- diffview
+	DiffAddedChar = { link = "DiffAdd" },
+	DiffChangedChar = { link = "DiffChange" },
+	DiffviewDiffAddAsDelete = { link = "DiffDelete" },
+	DiffviewDiffText = { link = "DiffText" },
+	DiffviewStatusAdded = { link = "DiffAddedChar" },
+	DiffviewStatusModified = { link = "DiffChangedChar" },
+	DiffviewStatusRenamed = { link = "DiffChangedChar" },
+	DiffviewStatusUnmerged = { link = "DiffChangedChar" },
+	DiffviewStatusUntracked = { link = "DiffAddedChar" },
+
+	-- neogit
+	NeogitDiffAdd = { link = "DiffAdd" },
+	NeogitDiffDelete = { link = "DiffDelete" },
 
 	-- trouble
 	TroubleCount = { bg = P.bg_alt, fg = P.pink },
