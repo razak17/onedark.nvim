@@ -407,6 +407,14 @@ local plugin_syntax = {
 	MarkdownHeadersTitle = { fg = P.light_gray },
 	MarkdownHeadersBorder = { link = "FloatBorder" },
 
+	-- headlines
+	Headline = { bg = tint(P.bg, -0.6), bold = true, italic = true },
+	CodeBlock = { bg = tint(P.bg_highlight, -0.4), bold = true, italic = true },
+	Headline1 = { bg = "#003c30" },
+	Headline2 = { bg = "#00441b" },
+	Headline3 = { bg = "#084081" },
+	Dash = { bg = "#0b60a1", bold = true },
+
 	-- buffer-tabs
 	BufferTabs = { fg = tint(P.purple, -0.2) },
 
