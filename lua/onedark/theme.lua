@@ -37,7 +37,7 @@ local syntax = {
 	ErrorMsg = { fg = P.pale_red, bg = P.none, bold = true },
 	WarningMsg = { fg = P.dark_orange, bg = P.none, bold = true },
 	ModeMsg = { fg = P.fg, bg = P.none, bold = true },
-	MatchParen = { fg = P.fg_alt, bg = P.none, underline = true },
+	MatchParen = { bg = tint(P.visual, -0.4), fg = P.dark_orange },
 	MatchWord = { fg = P.none, bg = P.none, underline = true },
 	NonText = { link = "Comment" },
 	Dim = { fg = P.base5 },
