@@ -421,6 +421,9 @@ local plugin_syntax = {
 	-- harpoon
 	HarpoonTitle = { fg = P.light_gray },
 	HarpoonBorder = { link = "FloatBorder" },
+
+  -- cmp
+  CmpItemKindCopilot = {fg = P.forest_green}
 }
 
 return {
