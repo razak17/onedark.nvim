@@ -274,13 +274,13 @@ local plugin_syntax = {
 	GitSignsAdd = { fg = P.sign_add },
 	GitSignsChange = { fg = P.sign_change },
 	GitSignsDelete = { fg = P.sign_delete },
-	GitSignsChangeDelete = { fg = P.violet },
-	GitSignsAddNr = { fg = P.sign_add },
-	GitSignsChangeNr = { fg = P.sign_change },
-	GitSignsDeleteNr = { fg = P.sign_delete },
+	GitSignsChangeDelete = { link = "GitSignsDelete" },
+	GitSignsAddNr = { link = "GitSignsAdd" },
+	GitSignsChangeNr = { link = "GitSignsAdd" },
+	GitSignsDeleteNr = { link = "GitSignsDelete" },
 	GitSignsAddLn = { bg = P.dark_grey },
 	GitSignsChangeLn = { bg = P.bg_highlight },
-	GitSignsDeleteLn = { bg = P.bg },
+	GitSignsDeleteLn = { bg = P.yellow },
 
 	-- diffview
 	DiffAddedChar = { link = "DiffAdd" },
@@ -422,8 +422,8 @@ local plugin_syntax = {
 	HarpoonTitle = { fg = P.light_gray },
 	HarpoonBorder = { link = "FloatBorder" },
 
-  -- cmp
-  CmpItemKindCopilot = {fg = P.forest_green}
+	-- cmp
+	CmpItemKindCopilot = { fg = P.forest_green },
 }
 
 return {
