@@ -47,17 +47,22 @@ function M.load()
 	vim.g.colors_name = "onedark"
 
 	local telescope = {}
+	local notify = {}
 	local telescope_variant = require("onedark.plugins.telescope")
+	local notify_variant = require("onedark.plugins.notify")
 	if vim.g.onedark_config.variant == "outline" then
 		telescope = telescope_variant.outline
+		notify = notify_variant.outline
 	end
 	if vim.g.onedark_config.variant == "fill" then
 		telescope = telescope_variant.fill
+		notify = notify_variant.fill
 	end
 
 	set_hl(theme.syntax)
 	set_hl(theme.plugin_syntax)
 	set_hl(telescope)
+	set_hl(notify)
 
 	require("onedark.terminal").setup()
 end

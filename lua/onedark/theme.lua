@@ -347,28 +347,6 @@ local plugin_syntax = {
 	-- nvim-lspconfig
 	LspInfoBorder = { link = "FloatBorder" },
 
-	-- nvim-notify
-	NotifyERRORTitle = { link = "DiagnosticError" },
-	NotifyWARNTitle = { link = "DiagnosticWarn" },
-	NotifyINFOTitle = { link = "DiagnosticInfo" },
-	NotifyDEBUGTitle = { link = "DiagnosticHint" },
-	NotifyTRACETitle = { link = "DiagnosticHint" },
-	NotifyERRORBody = { link = "NormalFloat" },
-	NotifyWARNBody = { link = "NormalFloat" },
-	NotifyINFOBody = { link = "NormalFloat" },
-	NotifyDEBUGBody = { link = "NormalFloat" },
-	NotifyTRACEBody = { link = "NormalFloat" },
-	NotifyERRORBorder = { fg = P.error_red },
-	NotifyWARNBorder = { fg = P.dark_orange },
-	NotifyINFOBorder = { fg = P.blue },
-	NotifyDEBUGBorder = { fg = P.purple_test },
-	NotifyTRACEBorder = { fg = P.pink },
-	NotifyERRORIcon = { link = "DiagnosticError" },
-	NotifyWARNIcon = { link = "DiagnosticWarn" },
-	NotifyINFOIcon = { link = "DiagnosticInfo" },
-	NotifyDEBUGIcon = { link = "DiagnosticHint" },
-	NotifyTRACEIcon = { link = "DiagnosticHint" },
-
 	-- indent-blankline
 	IndentBlanklineChar = { fg = P.bg_alt, nocombine = true },
 	IndentBlanklineContextChar = { fg = tint(P.purple, -0.1), nocombine = true },
