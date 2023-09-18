@@ -2,9 +2,9 @@ local P = require("onedark.palette")
 local tint = require("onedark.utils").tint
 
 local syntax = {
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	-- Editor
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	Normal = { fg = P.fg, bg = tint(P.bg, -0.4) },
 	NormalFloat = { link = "Normal" },
 	Terminal = { fg = P.fg, bg = P.bg },
@@ -60,9 +60,9 @@ local syntax = {
 	SpellRare = { fg = P.none, bg = P.none, undercurl = true },
 	QuickFixLine = { fg = P.black },
 	Debug = { fg = P.orange },
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	-- Extra (Editor)
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	NormalNC = { fg = P.fg, bg = P.none },
 	MsgArea = { link = "Normal" },
 	MsgSeparator = { fg = P.base7, bg = P.bg },
@@ -73,9 +73,9 @@ local syntax = {
 	URL = { fg = P.brighter_blue, underline = true },
 	FloatBorder = { link = "WinSeparator" },
 	FloatTitle = { link = "WildMenu" },
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	-- Lang
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	Boolean = { fg = P.orange },
 	Number = { fg = P.brown },
 	Float = { fg = P.brown },
@@ -117,9 +117,9 @@ local syntax = {
 	Method = { fg = P.green },
 	Class = { fg = P.blue },
 	JsonFold = { fg = P.comment },
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	-- Treesitter
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	["@comment"] = { link = "Comment" },
 	["@variable"] = { link = "Variable" },
 	["@string"] = { link = "String" },
@@ -193,9 +193,9 @@ local syntax = {
 	["@lsp.type.class.typescript"] = { fg = P.tsx_green, bg = P.none },
 	["@lsp.type.interface.typescript"] = { fg = P.ts_green, bg = P.none },
 	["@lsp.type.variable.typescript"] = { fg = P.tsx_green, bg = P.none },
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	-- Semantic tokens
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	["@lsp.type.namespace"] = { link = "@namespace" },
 	["@lsp.type.type"] = { link = "@type" },
 	["@lsp.type.class"] = { link = "@type" },
@@ -212,9 +212,9 @@ local syntax = {
 	["@lsp.type.decorator"] = { link = "@function" },
 	["@lsp.typemod.variable.readonly"] = { link = "@constant" },
 	["@lsp.mod.deprecated"] = { strikethrough = true },
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	-- LSP
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	DiagnosticError = { fg = P.error_red },
 	DiagnosticWarn = { fg = P.dark_orange },
 	DiagnosticInfo = { fg = P.blue },
@@ -250,9 +250,9 @@ local syntax = {
 }
 
 local plugin_syntax = {
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 	-- Plugins
-	--------------------------------------------------------------------------------------------------
+	------------------------------------------------------------------------------
 
 	-- virtcolumn
 	VirtColumn = { link = "FloatBorder" },
@@ -324,22 +324,6 @@ local plugin_syntax = {
 	NeoTreeExpander = { link = "NeoTreeIndentMarker" },
 	NeoTreeFileNameOpened = { fg = P.bg_visual, bold = true, underline = true },
 	NeoTreeTabActive = { link = "FloatTitle" },
-
-	-- telescope
-	TelescopeNormal = { fg = P.fg },
-	TelescopeBorder = { link = "FloatBorder" },
-	TelescopeResultsBorder = { link = "FloatBorder" },
-	TelescopePromptBorder = { link = "FloatBorder" },
-	TelescopePreviewBorder = { link = "VertSplit" },
-	TelescopeMatching = { link = "Directory" },
-	TelescopeSelection = { link = "CursorLine" },
-	TelescopeSelectionCaret = { link = "Exception" },
-	TelescopeMultiSelection = { link = "CursorLineNr" },
-	TelescopePromptPrefix = { link = "CursorLineNr" },
-	TelescopePromptCounter = { link = "CursorLineNr" },
-	TelescopeResultsTitle = { link = "Operator" },
-	TelescopePromptTitle = { link = "Operator" },
-	TelescopePreviewTitle = { link = "Operator" },
 
 	-- picker
 	PickerBorder = { link = "FloatBorder" },
