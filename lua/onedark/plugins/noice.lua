@@ -10,7 +10,7 @@ M.fill = {
 	NoicePopupBaseGroup = { bg = bg, fg = bg },
 	NoicePopupWarnBaseGroup = { bg = bg, fg = bg },
 	NoicePopupInfoBaseGroup = { bg = bg, fg = bg },
-	NoiceCmdlinePopup = { bg = bg, fg = P.cursor },
+	NoiceCmdlinePopup = { bg = bg, fg = P.base7 },
 	NoiceCmdlinePopupBorder = { bg = bg, fg = bg },
 	NoiceCmdlinePopupTitle = { link = "FloatTitle" },
 	NoiceCmdlinePopupBorderCmdline = { link = "NoicePopupBaseGroup" },
