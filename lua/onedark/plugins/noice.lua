@@ -6,7 +6,7 @@ local bg = tint(P.bg, 0.1)
 local M = {}
 
 M.fill = {
-	NoiceMini = { bg = bg, fg = bg },
+	NoiceMini = { bg = tint(P.bg, -0.4) },
 	NoicePopupBaseGroup = { bg = bg, fg = bg },
 	NoicePopupWarnBaseGroup = { bg = bg, fg = bg },
 	NoicePopupInfoBaseGroup = { bg = bg, fg = bg },
@@ -31,10 +31,16 @@ M.fill = {
 	NoiceCmdlineIconLua = { fg = P.blue },
 	NoiceConfirm = { link = "NormalFloat" },
 	NoiceConfirmBorder = { link = "NoicePopupBaseGroup" },
+	NoiceFormatProgressDone = { link = "NoiceMini" },
+	NoiceFormatProgressTodo = { link = "NoiceMini" },
+	NoiceLspProgressClient = { fg = P.orange },
+	NoiceLspProgressSpinner = { fg = P.purple },
+	NoiceLspProgressTitle = { fg = P.comment },
+	NoiceFormatEvent = { fg = P.yellow },
 }
 
 M.outline = {
-	NoiceMini = { link = "Normal" },
+	NoiceMini = { bg = tint(P.bg, -0.4) },
 	NoicePopupBaseGroup = { link = "CursorLineNr" },
 	NoicePopupWarnBaseGroup = { link = "Directory" },
 	NoicePopupInfoBaseGroup = { link = "Conditional" },
@@ -59,6 +65,12 @@ M.outline = {
 	NoiceCmdlineIconLua = { link = "NoicePopupBaseGroup" },
 	NoiceConfirm = { link = "NormalFloat" },
 	NoiceConfirmBorder = { link = "NoicePopupBaseGroup" },
+	NoiceFormatProgressDone = { link = "NoiceMini" },
+	NoiceFormatProgressTodo = { link = "NoiceMini" },
+	NoiceLspProgressClient = { fg = P.orange },
+	NoiceLspProgressSpinner = { fg = P.purple },
+	NoiceLspProgressTitle = { fg = P.comment },
+	NoiceFormatEvent = { fg = P.yellow },
 }
 
 return M
