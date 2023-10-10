@@ -1,7 +1,7 @@
 local P = require("onedark.palette")
 local tint = require("onedark.utils").tint
 
-local bg = tint(P.bg, 0.1)
+local bg = P.bg
 
 local M = {}
 
@@ -29,8 +29,11 @@ M.fill = {
 	NoiceCmdlineIconSubstitute = { fg = P.blue },
 	NoiceCmdlineIconInput = { fg = P.purple },
 	NoiceCmdlineIconLua = { fg = P.blue },
-	NoiceConfirm = { link = "NormalFloat" },
+	NoiceConfirm = { bg = bg, fg = P.bg_visual },
 	NoiceConfirmBorder = { link = "NoicePopupBaseGroup" },
+	NoiceFormatConfirm = { link = 'Normal' },
+	NoiceFormatConfirmDefault = { bg = P.dark_grey, fg = P.fg },
+	NoicePopupmenuSelected = { bg = P.dark_pink, fg = P.fg },
 	NoiceFormatProgressDone = { link = "NoiceMini" },
 	NoiceFormatProgressTodo = { link = "NoiceMini" },
 	NoiceLspProgressClient = { fg = P.orange },

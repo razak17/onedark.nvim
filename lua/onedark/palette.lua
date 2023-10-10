@@ -63,6 +63,8 @@ return {
 	chartreuse = "#1DC123",
 	forest_green = "#6CC644",
 	cursor = "#1d7c78",
+  ansi_green = '#3FDAA4',
+  turquoise = '#25B0BC',
 
 	cyan = "#A5D6FF",
 	term_blue = "#3a81c3",
