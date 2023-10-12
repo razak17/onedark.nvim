@@ -349,7 +349,7 @@ local plugin_syntax = {
 
 	-- indent-blankline
 	IndentBlanklineChar = { fg = P.bg_alt, nocombine = true },
-	IndentBlanklineContextChar = { fg = tint(P.purple, -0.1), nocombine = true },
+	IndentBlanklineContextChar = { fg = tint(P.purple, -0.5), nocombine = true },
 
 	-- DAP
 	DapBreakpoint = { link = "DiagnosticError" },
