@@ -26,7 +26,7 @@ local syntax = {
 	iCursor = { fg = P.none, bg = P.none, reverse = true },
 	lCursor = { fg = P.none, bg = P.none, reverse = true },
 	CursorIM = { fg = P.none, bg = P.none, reverse = true },
-	LineNr = { fg = P.comment },
+	LineNr = { fg = tint(P.purple, -0.5) },
 	qfLineNr = { fg = P.cyan },
 	CursorLineNr = { fg = P.purple, bold = true },
 	DiffAdd = { bg = P.diff_add },
@@ -340,6 +340,9 @@ local plugin_syntax = {
 	WhichKeyFloat = { link = "Normal" },
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
+
+  -- clear-action.nvim
+	CodeActionIcon = { fg = P.brighter_blue },
 
 	-- null-ls
 	NullLsInfoBorder = { link = "FloatBorder" },
