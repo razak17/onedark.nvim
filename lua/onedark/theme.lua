@@ -362,10 +362,6 @@ local plugin_syntax = {
 	IlluminatedWordRead = { bg = P.base4, underline = false },
 	IlluminatedWordWrite = { bg = P.base4, underline = false },
 
-	-- buffer-manager
-	BufferManagerTitle = { fg = P.light_gray },
-	BufferManagerBorder = { link = "FloatBorder" },
-
 	-- md-headers
 	MarkdownHeadersTitle = { fg = P.light_gray },
 	MarkdownHeadersBorder = { link = "FloatBorder" },
@@ -381,10 +377,6 @@ local plugin_syntax = {
 	-- buffer-tabs
 	BufferTabs = { fg = tint(P.purple, -0.2) },
 
-	-- harpoon
-	HarpoonTitle = { fg = P.light_gray },
-	HarpoonBorder = { link = "FloatBorder" },
-
 	-- cmp
 	CmpItemKindCopilot = { fg = P.forest_green },
 
@@ -392,7 +384,44 @@ local plugin_syntax = {
 	DevIconDefault = { link = "FloatTitle" },
 }
 
+local plugins_fill_highlights = {
+	NormalFill = { bg = tint(P.bg, -0.2), fg = P.fg },
+	FloatBorderFill = { bg = tint(P.bg, -0.2), fg = tint(P.bg, -0.2) },
+
+	-- buffalo
+	BuffaloWindow = { link = "NormalFill" },
+	BuffaloBorder = { link = "FloatBorderFill" },
+	BuffaloTitle = { link = "FloatTitle" },
+
+	-- harpoon
+	HarpoonWindow = { link = "NormalFill" },
+	HarpoonBorder = { link = "FloatBorderFill" },
+	HarpoonTitle = { link = "FloatTitle" },
+
+	-- buffer-manager
+	BufferManagerTitle = { link = "FloatTitle" },
+	BufferManagerBorder = { link = "FloatBorderFill" },
+}
+
+local plugins_outline_highlights = {
+	-- buffalo
+	BuffaloWindow = { link = "Normal" },
+	BuffaloBorder = { link = "FloatBorder" },
+	BuffaloTitle = { link = "FloatTitle" },
+
+	-- harpoon
+	HarpoonWindow = { link = "Normal" },
+	HarpoonBorder = { link = "FloatBorder" },
+	HarpoonTitle = { link = "FloatTitle" },
+
+	-- buffer-manager
+	BufferManagerTitle = { link = "FloatTitle" },
+	BufferManagerBorder = { link = "FloatBorder" },
+}
+
 return {
 	syntax = syntax,
 	plugin_syntax = plugin_syntax,
+	plugins_fill_highlights = plugins_fill_highlights,
+	plugins_outline_highlights = plugins_outline_highlights,
 }
