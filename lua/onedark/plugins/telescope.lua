@@ -4,6 +4,7 @@ local tint = require("onedark.utils").tint
 local M = {}
 
 M.fill = {
+	PickerBorder = { link = "TelescopePromptBorder" },
 	TelescopeNormal = { bg = tint(P.bg, 0.6) },
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeMatching = { link = "Directory" },
@@ -24,6 +25,7 @@ M.fill = {
 }
 
 M.outline = {
+	PickerBorder = { link = "FloatBorder" },
 	TelescopeNormal = { fg = P.fg },
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeMatching = { link = "Directory" },

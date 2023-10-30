@@ -52,17 +52,20 @@ function M.load()
 	local telescope = require("onedark.plugins.telescope")
 	local notify = require("onedark.plugins.notify")
 	local noice = require("onedark.plugins.noice")
+  local fzf_lua = require("onedark.plugins.fzf-lua")
 
 	if vim.g.onedark_config.variant == "outline" then
-		set_hl(telescope.outlinee)
+		set_hl(telescope.outline)
 		set_hl(notify.outline)
 		set_hl(noice.outline)
+    set_hl(fzf_lua.outline)
 	end
 
 	if vim.g.onedark_config.variant == "fill" then
 		set_hl(telescope.fill)
 		set_hl(notify.fill)
 		set_hl(noice.fill)
+    set_hl(fzf_lua.fill)
 	end
 
 	require("onedark.terminal").setup()

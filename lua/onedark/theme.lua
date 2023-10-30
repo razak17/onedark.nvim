@@ -19,7 +19,7 @@ local syntax = {
 	Search = { bg = tint(P.purple, -0.7) },
 	IncSearch = { link = "Search" },
 	CursorLine = { bg = tint(P.bg_highlight, -0.2) },
-	ColorColumn = { link = "CursorLine" },
+	ColorColumn = { link = "Folded" },
 	Conceal = { fg = P.grey, bg = P.none },
 	Cursor = { fg = P.none, bg = P.none, reverse = true },
 	vCursor = { fg = P.none, bg = P.none, reverse = true },
@@ -326,9 +326,6 @@ local plugin_syntax = {
 	NeoTreeFileNameOpened = { fg = P.bg_visual, bold = true, underline = true },
 	NeoTreeTabActive = { link = "FloatTitle" },
 
-	-- picker
-	PickerBorder = { link = "FloatBorder" },
-
 	-- dashboard
 	DashboardShortCut = { fg = P.darker_blue },
 	DashboardHeader = { fg = P.blue },
@@ -342,7 +339,7 @@ local plugin_syntax = {
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
 
-  -- clear-action.nvim
+	-- clear-action.nvim
 	CodeActionIcon = { fg = P.brighter_blue },
 
 	-- null-ls
@@ -352,7 +349,7 @@ local plugin_syntax = {
 	LspInfoBorder = { link = "FloatBorder" },
 
 	-- indent-blankline
-	IndentBlanklineChar = { fg = P.bg_alt, nocombine = true },
+	IndentBlanklineChar = { fg = tint(P.bg_alt, -0.2), nocombine = true },
 	IndentBlanklineContextChar = { fg = tint(P.purple, -0.5), nocombine = true },
 
 	-- DAP
@@ -390,6 +387,9 @@ local plugin_syntax = {
 
 	-- cmp
 	CmpItemKindCopilot = { fg = P.forest_green },
+
+	-- devicons
+	DevIconDefault = { link = "FloatTitle" },
 }
 
 return {
