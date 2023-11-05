@@ -1,47 +1,19 @@
-local P = require("onedark.palette")
-local tint = require("onedark.utils").tint
-
-local M = {}
-
-M.fill = {
-	PickerBorder = { link = "TelescopePromptBorder" },
-	TelescopeNormal = { bg = tint(P.bg, 0.6) },
+return {
+	TelescopeNormal = { link = "NormalFloat" },
 	TelescopeBorder = { link = "FloatBorder" },
 	TelescopeMatching = { link = "Directory" },
 	TelescopeMultiSelection = { link = "CursorLineNr" },
-	TelescopePromptNormal = { fg = P.fg, bg = P.bg },
-	TelescopePromptBorder = { bg = P.bg, fg = P.bg },
+	TelescopePromptNormal = { link = "PickerPromptNormal" },
+	TelescopePromptBorder = { link = "PickerPromptBorder" },
+	TelescopePromptTitle = { link = "PickerPromptTitle" },
 	TelescopePromptCounter = { link = "CursorLineNr" },
-	TelescopePromptTitle = { link = "FloatTitle" },
 	TelescopePromptPrefix = { link = "CursorLineNr" },
-	TelescopeSelection = { bg = tint(P.bg, 0.4) },
+	TelescopeSelection = { link = "PickerSelection" },
 	TelescopeSelectionCaret = { link = "Exception" },
-	TelescopeResultsTitle = { link = "FloatTitle" },
-	TelescopeResultsNormal = { bg = tint(P.bg, -0.1) },
-	TelescopeResultsBorder = { bg = tint(P.bg, -0.1), fg = tint(P.bg, -0.1) },
-	TelescopePreviewNormal = { bg = tint(P.bg, -0.2), fg = P.fg },
-	TelescopePreviewTitle = { link = "FloatTitle" },
-	TelescopePreviewBorder = { bg = tint(P.bg, -0.2), fg = tint(P.bg, -0.2) },
+	TelescopeResultsNormal = { link = "PickerResultsNormal" },
+	TelescopeResultsBorder = { link = "PickerResultsBorder" },
+	TelescopeResultsTitle = { link = "PickerResultsTitle" },
+	TelescopePreviewNormal = { link = "PickerPreviewNormal" },
+	TelescopePreviewBorder = { link = "PickerPreviewBorder" },
+	TelescopePreviewTitle = { link = "PickerPreviewTitle" },
 }
-
-M.outline = {
-	PickerBorder = { link = "FloatBorder" },
-	TelescopeNormal = { fg = P.fg },
-	TelescopeBorder = { link = "FloatBorder" },
-	TelescopeMatching = { link = "Directory" },
-	TelescopeMultiSelection = { link = "CursorLineNr" },
-	TelescopePromptNormal = { fg = P.fg },
-	TelescopePromptBorder = { link = "FloatBorder" },
-	TelescopePromptCounter = { link = "CursorLineNr" },
-	TelescopePromptTitle = { link = "FloatTitle" },
-	TelescopePromptPrefix = { link = "CursorLineNr" },
-	TelescopeSelection = { link = "CursorLine" },
-	TelescopeSelectionCaret = { link = "Exception" },
-	TelescopeResultsNormal = { fg = P.fg },
-	TelescopeResultsTitle = { link = "FloatTitle" },
-	TelescopeResultsBorder = { link = "FloatBorder" },
-	TelescopePreviewTitle = { link = "FloatTitle" },
-	TelescopePreviewBorder = { link = "VertSplit" },
-}
-
-return M

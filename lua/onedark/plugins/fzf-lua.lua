@@ -1,17 +1,12 @@
-local P = require("onedark.palette")
-local tint = require("onedark.utils").tint
-
-local M = {}
-
-M.fill = {
-	FzfLuaNormal = { link = "TelescopePromptNormal" },
-	FzfLuaBorder = { link = "TelescopePromptBorder" },
-	FzfLuaTitle = { link = "FloatTitle" },
-	FzfLuaPreviewNormal = { link = "TelescopePreviewNormal" },
-	FzfLuaPreviewBorder = { link = "TelescopePreviewBorder" },
-	FzfLuaPreviewTitle = { link = "FloatTitle" },
+return {
+	FzfLuaNormal = { link = "PickerPromptNormal" },
+	FzfLuaBorder = { link = "PickerResultsBorder" },
+	FzfLuaTitle = { link = "PickerResultsTitle" },
+	FzfLuaPreviewNormal = { link = "PickerPreviewNormal" },
+	FzfLuaPreviewBorder = { link = "PickerPreviewBorder" },
+	FzfLuaPreviewTitle = { link = "PickerPreviewTitle" },
 	FzfLuaCursor = { link = "Cursor" },
-	FzfLuaCursorLine = { link = "TelescopeSelection" },
+	FzfLuaCursorLine = { link = "PickerSelection" },
 	FzfLuaCursorLineNr = { link = "CursorLineNr" },
 	FzfLuaSearch = { link = "FloatTitle" },
 	-- FzfLuaScrollBorderEmpty = { link = 'FloatTitle' },
@@ -30,9 +25,3 @@ M.fill = {
 	FzfLuaTabTitle = { link = "FloatTitle" },
 	FzfLuaTabMarker = { link = "FloatTitle" },
 }
-
-M.outline = {
-	FzfLuaTitle = { link = "FloatTitle" },
-}
-
-return M

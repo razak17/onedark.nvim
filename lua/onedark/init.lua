@@ -56,18 +56,18 @@ function M.load()
 
 	if vim.g.onedark_config.variant == "outline" then
 		set_hl(theme.plugins_outline_highlights)
-		set_hl(telescope.outline)
+		set_hl(telescope)
 		set_hl(notify.outline)
 		set_hl(noice.outline)
-		set_hl(fzf_lua.outline)
+		set_hl(fzf_lua)
 	end
 
 	if vim.g.onedark_config.variant == "fill" then
 		set_hl(theme.plugins_fill_highlights)
-		set_hl(telescope.fill)
+		set_hl(telescope)
 		set_hl(notify.fill)
 		set_hl(noice.fill)
-		set_hl(fzf_lua.fill)
+		set_hl(fzf_lua)
 	end
 
 	require("onedark.terminal").setup()

@@ -6,7 +6,6 @@ local syntax = {
 	-- Editor
 	------------------------------------------------------------------------------
 	Normal = { fg = P.fg, bg = tint(P.bg, -0.4) },
-	NormalFloat = { link = "Normal" },
 	Terminal = { fg = P.fg, bg = P.bg },
 	SignColumn = { link = "Normal" },
 	CursorColumn = { link = "Normal" },
@@ -71,7 +70,6 @@ local syntax = {
 	TabLineFill = { bg = P.bg },
 	WinSeparator = { link = "VertSplit" },
 	URL = { fg = P.brighter_blue, underline = true },
-	FloatBorder = { link = "WinSeparator" },
 	FloatTitle = { link = "WildMenu" },
 	------------------------------------------------------------------------------
 	-- Lang
@@ -385,32 +383,67 @@ local plugin_syntax = {
 }
 
 local plugins_fill_highlights = {
-	NormalFill = { bg = tint(P.bg, -0.2), fg = P.fg },
-	FloatBorderFill = { bg = tint(P.bg, -0.2), fg = tint(P.bg, -0.2) },
+	NormalFloat = { bg = tint(P.bg, -0.2), fg = P.fg },
+	FloatBorder = { bg = tint(P.bg, -0.2), fg = tint(P.bg, -0.2) },
+
+	-- picker
+	PickerBorder = { bg = P.bg, fg = P.bg },
+	PickerSelection = { bg = tint(P.bg, 0.4) },
+
+	PickerPromptNormal = { fg = P.fg, bg = P.bg },
+	PickerPromptBorder = { link = "PickerBorder" },
+	PickerPromptTitle = { link = "FloatTitle" },
+
+	PickerResultsNormal = { bg = tint(P.bg, -0.1) },
+	PickerResultsBorder = { bg = tint(P.bg, -0.1), fg = tint(P.bg, -0.1) },
+	PickerResultsTitle = { link = "FloatTitle" },
+
+	PickerPreviewNormal = { bg = tint(P.bg, -0.2), fg = P.fg },
+	PickerPreviewBorder = { link = "FloatBorder" },
+	PickerPreviewTitle = { link = "FloatTitle" },
 
 	-- buffalo
-	BuffaloWindow = { link = "NormalFill" },
-	BuffaloBorder = { link = "FloatBorderFill" },
-	BuffaloTitle = { link = "FloatTitle" },
-
-	-- harpoon
-	HarpoonWindow = { link = "NormalFill" },
-	HarpoonBorder = { link = "FloatBorderFill" },
-	HarpoonTitle = { link = "FloatTitle" },
-
-	-- buffer-manager
-	BufferManagerTitle = { link = "FloatTitle" },
-	BufferManagerBorder = { link = "FloatBorderFill" },
-}
-
-local plugins_outline_highlights = {
-	-- buffalo
-	BuffaloWindow = { link = "Normal" },
+	BuffaloWindow = { link = "NormalFloat" },
 	BuffaloBorder = { link = "FloatBorder" },
 	BuffaloTitle = { link = "FloatTitle" },
 
 	-- harpoon
-	HarpoonWindow = { link = "Normal" },
+	HarpoonWindow = { link = "NormalFloat" },
+	HarpoonBorder = { link = "FloatBorder" },
+	HarpoonTitle = { link = "FloatTitle" },
+
+	-- buffer-manager
+	BufferManagerTitle = { link = "FloatTitle" },
+	BufferManagerBorder = { link = "FloatBorder" },
+}
+
+local plugins_outline_highlights = {
+	NormalFloat = { link = "Normal" },
+	FloatBorder = { link = "WinSeparator" },
+
+	-- picker
+	PickerBorder = { link = "FloatBorder" },
+	PickerSelection = { link = "CursorLine" },
+
+	PickerPromptNormal = { link = "NormalFloat" },
+	PickerPromptBorder = { link = "FloatBorder" },
+	PickerPromptTitle = { link = "FloatTitle" },
+
+	PickerPromptNormal = { link = "NormalFloat" },
+	PickerResultsBorder = { link = "FloatBorder" },
+	PickerResultsTitle = { link = "FloatTitle" },
+
+	PickerPreviewNormal = { link = "NormalFloat" },
+	PickerPreviewTitle = { link = "FloatTitle" },
+	PickerPreviewBorder = { link = "VertSplit" },
+
+	-- buffalo
+	BuffaloWindow = { link = "NormalFloat" },
+	BuffaloBorder = { link = "FloatBorder" },
+	BuffaloTitle = { link = "FloatTitle" },
+
+	-- harpoon
+	HarpoonWindow = { link = "NormalFloat" },
 	HarpoonBorder = { link = "FloatBorder" },
 	HarpoonTitle = { link = "FloatTitle" },
 

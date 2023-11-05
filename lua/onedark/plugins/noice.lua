@@ -31,7 +31,7 @@ M.fill = {
 	NoiceCmdlineIconLua = { fg = P.blue },
 	NoiceConfirm = { bg = bg, fg = P.bg_visual },
 	NoiceConfirmBorder = { link = "NoicePopupBaseGroup" },
-	NoiceFormatConfirm = { link = 'Normal' },
+	NoiceFormatConfirm = { link = "Normal" },
 	NoiceFormatConfirmDefault = { bg = P.dark_grey, fg = P.fg },
 	NoicePopupmenuSelected = { bg = P.dark_pink, fg = P.fg },
 	NoiceFormatProgressDone = { link = "NoiceMini" },
