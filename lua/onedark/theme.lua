@@ -304,12 +304,6 @@ local plugin_syntax = {
 	TroubleTextInformation = { fg = P.blue },
 	TroubleTextHint = { fg = P.teal },
 
-	-- nvim-bqf
-	BqfPreviewBorder = { link = "FloatBorder" },
-	BqfSign = { fg = P.red },
-	BqfPreviewRange = { fg = P.cyan },
-	BqfPreviewCursor = { fg = P.yellowgreen },
-
 	-- neo-tree
 	NeoTreeGitAdded = { fg = P.sign_add },
 	NeoTreeGitConflict = { fg = P.sign_delete },
@@ -333,7 +327,7 @@ local plugin_syntax = {
 	-- which-key
 	WhichKey = { fg = P.pink },
 	WhichKeySeparator = { fg = tint(P.cyan, -0.2) },
-	WhichKeyFloat = { link = "Normal" },
+	WhichKeyFloat = { link = "NormalFloat" },
 	WhichKeyGroup = { fg = P.pale_blue },
 	WhichKeyDesc = { fg = P.dark_cyan },
 
@@ -378,8 +372,27 @@ local plugin_syntax = {
 	-- cmp
 	CmpItemKindCopilot = { fg = P.forest_green },
 
-	-- devicons
-	DevIconDefault = { link = "FloatTitle" },
+	-- nvim-bqf
+	BqfPreviewFloat= { link = "NormalFloat" },
+	BqfPreviewTitle= { link = "FloatTitle" },
+	BqfPreviewBorder = { link = "FloatBorder" },
+	BqfSign = { fg = P.red },
+	BqfPreviewRange = { fg = P.cyan },
+	BqfPreviewCursor = { fg = P.yellowgreen },
+
+	-- buffalo
+	BuffaloWindow = { link = "NormalFloat" },
+	BuffaloBorder = { link = "FloatBorder" },
+	BuffaloTitle = { link = "FloatTitle" },
+
+	-- harpoon
+	HarpoonWindow = { link = "NormalFloat" },
+	HarpoonBorder = { link = "FloatBorder" },
+	HarpoonTitle = { link = "FloatTitle" },
+
+	-- buffer-manager
+	BufferManagerTitle = { link = "FloatTitle" },
+	BufferManagerBorder = { link = "FloatBorder" },
 }
 
 local plugins_fill_highlights = {
@@ -401,20 +414,6 @@ local plugins_fill_highlights = {
 	PickerPreviewNormal = { bg = tint(P.bg, -0.2), fg = P.fg },
 	PickerPreviewBorder = { link = "FloatBorder" },
 	PickerPreviewTitle = { link = "FloatTitle" },
-
-	-- buffalo
-	BuffaloWindow = { link = "NormalFloat" },
-	BuffaloBorder = { link = "FloatBorder" },
-	BuffaloTitle = { link = "FloatTitle" },
-
-	-- harpoon
-	HarpoonWindow = { link = "NormalFloat" },
-	HarpoonBorder = { link = "FloatBorder" },
-	HarpoonTitle = { link = "FloatTitle" },
-
-	-- buffer-manager
-	BufferManagerTitle = { link = "FloatTitle" },
-	BufferManagerBorder = { link = "FloatBorder" },
 }
 
 local plugins_outline_highlights = {
@@ -429,27 +428,13 @@ local plugins_outline_highlights = {
 	PickerPromptBorder = { link = "FloatBorder" },
 	PickerPromptTitle = { link = "FloatTitle" },
 
-	PickerPromptNormal = { link = "NormalFloat" },
+	PickerResultsNormal = { link = "NormalFloat" },
 	PickerResultsBorder = { link = "FloatBorder" },
 	PickerResultsTitle = { link = "FloatTitle" },
 
 	PickerPreviewNormal = { link = "NormalFloat" },
 	PickerPreviewTitle = { link = "FloatTitle" },
 	PickerPreviewBorder = { link = "VertSplit" },
-
-	-- buffalo
-	BuffaloWindow = { link = "NormalFloat" },
-	BuffaloBorder = { link = "FloatBorder" },
-	BuffaloTitle = { link = "FloatTitle" },
-
-	-- harpoon
-	HarpoonWindow = { link = "NormalFloat" },
-	HarpoonBorder = { link = "FloatBorder" },
-	HarpoonTitle = { link = "FloatTitle" },
-
-	-- buffer-manager
-	BufferManagerTitle = { link = "FloatTitle" },
-	BufferManagerBorder = { link = "FloatBorder" },
 }
 
 return {

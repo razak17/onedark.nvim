@@ -47,7 +47,6 @@ function M.load()
 	vim.g.colors_name = "onedark"
 
 	set_hl(theme.syntax)
-	set_hl(theme.plugin_syntax)
 
 	local telescope = require("onedark.plugins.telescope")
 	local notify = require("onedark.plugins.notify")
@@ -56,6 +55,7 @@ function M.load()
 
 	if vim.g.onedark_config.variant == "outline" then
 		set_hl(theme.plugins_outline_highlights)
+		set_hl(theme.plugin_syntax)
 		set_hl(telescope)
 		set_hl(notify.outline)
 		set_hl(noice.outline)
@@ -64,6 +64,7 @@ function M.load()
 
 	if vim.g.onedark_config.variant == "fill" then
 		set_hl(theme.plugins_fill_highlights)
+		set_hl(theme.plugin_syntax)
 		set_hl(telescope)
 		set_hl(notify.fill)
 		set_hl(noice.fill)
