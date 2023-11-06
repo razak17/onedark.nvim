@@ -6,7 +6,7 @@ local bg = P.bg
 local M = {}
 
 M.fill = {
-	NoiceMini = { bg = tint(P.bg, -0.4) },
+	NoiceMini = { bg = P.none },
 	NoicePopupBaseGroup = { bg = bg, fg = bg },
 	NoicePopupWarnBaseGroup = { bg = bg, fg = bg },
 	NoicePopupInfoBaseGroup = { bg = bg, fg = bg },
