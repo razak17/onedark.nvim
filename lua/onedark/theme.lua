@@ -17,7 +17,7 @@ local syntax = {
 	VisualNOS = { link = "Visual" },
 	Search = { bg = tint(P.purple, -0.7) },
 	IncSearch = { link = "Search" },
-	CursorLine = { bg = tint(P.bg_highlight, -0.2) },
+	CursorLine = { bg = tint(P.bg_highlight, -0.1) },
 	ColorColumn = { link = "Folded" },
 	Conceal = { fg = P.grey, bg = P.none },
 	Cursor = { fg = P.none, bg = P.none, reverse = true },
