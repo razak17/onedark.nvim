@@ -10,7 +10,7 @@ local syntax = {
 	SignColumn = { link = "Normal" },
 	CursorColumn = { link = "Normal" },
 	FoldColumn = { fg = P.fg_alt, bg = P.black },
-	VertSplit = { fg = tint(P.purple, -0.5) },
+	VertSplit = { fg = tint(P.purple, -0.7) },
 	Folded = { bg = tint(P.bg_highlight, -0.3), fg = P.comment },
 	EndOfBuffer = { fg = P.bg, bg = P.none },
 	Visual = { bg = tint(P.bg_highlight, -0.1) },
