@@ -81,8 +81,11 @@ return {
 	dark_grey = "#3E4556",
 	black = "#000000",
 
-	diff_add = "#143609",
-	diff_delete = "#390403",
-	diff_change = "#143609",
+	diff_add = "#005f00",
+  -- diff_add = "#143609",
+	diff_delete = "#5e0000",
+  diff_delete_alt = "#390403",
+  diff_change = "#008700",
+	-- diff_change = "#143609",
 	diff_text = "#185b12",
 }
