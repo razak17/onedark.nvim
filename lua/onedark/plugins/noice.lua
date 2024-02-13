@@ -6,7 +6,7 @@ local bg = P.bg
 local M = {}
 
 M.fill = {
-	NoiceMini = { link = "FloatTitle" },
+	NoiceMini = { link = "Boolean" },
 	NoicePopupBaseGroup = { bg = bg, fg = bg },
 	NoicePopupWarnBaseGroup = { bg = bg, fg = bg },
 	NoicePopupInfoBaseGroup = { bg = bg, fg = bg },
