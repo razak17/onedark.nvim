@@ -6,7 +6,7 @@ local bg = P.bg
 local M = {}
 
 M.fill = {
-	NoiceMini = { link = "Boolean" },
+	NoiceMini = { bg = P.bg, fg = P.orange },
 	NoicePopupBaseGroup = { bg = bg, fg = bg },
 	NoicePopupWarnBaseGroup = { bg = bg, fg = bg },
 	NoicePopupInfoBaseGroup = { bg = bg, fg = bg },
@@ -36,9 +36,9 @@ M.fill = {
 	NoicePopupmenuSelected = { bg = P.dark_pink, fg = P.fg },
 	NoiceFormatProgressDone = { link = "NoiceMini" },
 	NoiceFormatProgressTodo = { link = "NoiceMini" },
-	NoiceLspProgressClient = { fg = P.orange },
-	NoiceLspProgressSpinner = { fg = P.purple },
-	NoiceLspProgressTitle = { fg = P.comment },
+	NoiceLspProgressClient = { bg = P.none, fg = P.orange },
+	NoiceLspProgressSpinner = { bg = P.none, fg = P.purple },
+	NoiceLspProgressTitle = { bg = P.none, fg = P.comment },
 	NoiceFormatEvent = { fg = P.yellow },
 }
 
