@@ -364,11 +364,14 @@ local plugin_syntax = {
 
 	-- headlines
 	Headline = { bg = tint(P.bg, -0.6), bold = true, italic = true },
-	CodeBlock = { bg = tint(P.bg_highlight, -0.4), bold = true, italic = true },
-	Headline1 = { bg = "#003c30" },
-	Headline2 = { bg = "#00441b" },
-	Headline3 = { bg = "#084081" },
-	Dash = { bg = "#0b60a1", bold = true },
+  CodeBlock = { bg = tint(P.bg_highlight, -0.35), bold = true, italic = true },
+  Headline1 = { bg = "#295715", fg = P.bg_visual },
+  Headline2 = { bg = "#8d8200", fg = P.bg_visual },
+  Headline3 = { bg = "#a56106", fg = P.bg_visual },
+  Headline4 = { bg = "#7e0000", fg = P.bg_visual },
+  Headline5 = { bg = "#1e0b7b", fg = P.bg_visual },
+  Headline6 = { bg = "#560b7b", fg = P.bg_visual },
+  Dash = { fg = P.bg_visual, bold = true },
 
 	-- buffer-tabs
 	BufferTabs = { fg = tint(P.purple, -0.2) },
