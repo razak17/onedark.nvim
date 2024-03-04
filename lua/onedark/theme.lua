@@ -218,6 +218,7 @@ local syntax = {
 	------------------------------------------------------------------------------
 	-- LSP
 	------------------------------------------------------------------------------
+  LspInlayHint = { link = "Comment" },
 	DiagnosticError = { fg = P.error_red },
 	DiagnosticWarn = { fg = P.dark_orange },
 	DiagnosticInfo = { fg = P.blue },
