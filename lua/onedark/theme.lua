@@ -243,7 +243,7 @@ local syntax = {
 	DiagnosticFloatingInfo = { link = "DiagnosticInfo" },
 	DiagnosticFloatingHint = { link = "DiagnosticHint" },
 	DiagnosticUnderlineError = { undercurl = true, sp = P.error_red },
-	DiagnosticUnderlineWarn = { undercurl = true, sp = P.dark_orange },
+  DiagnosticUnderlineWarn = { undercurl = true, sp = tint(P.dark_orange, -0.2) },
 	DiagnosticUnderlineInfo = { undercurl = true, sp = P.blue },
 	DiagnosticUnderlineHint = { undercurl = true, sp = P.darker_green },
 	DiagnosticVirtualTextError = { italic = true, fg = P.error_red, bg = tint(P.pale_red, -0.7) },
