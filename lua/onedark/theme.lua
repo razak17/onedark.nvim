@@ -279,13 +279,16 @@ local plugin_syntax = {
   GitSignsAdd = { fg = P.sign_add },
   GitSignsChange = { fg = P.sign_change },
   GitSignsDelete = { fg = P.sign_delete },
-  GitSignsChangeDelete = { link = "GitSignsDelete" },
+  GitSignsStagedAdd = { fg = tint(P.sign_add, -0.5) },
+  GitSignsStagedChange = { fg = tint(P.sign_change, -0.5) },
+  GitSignsStagedDelete = { fg = tint(P.sign_delete, -0.5) },
   GitSignsAddNr = { link = "GitSignsAdd" },
   GitSignsChangeNr = { link = "GitSignsAdd" },
   GitSignsDeleteNr = { link = "GitSignsDelete" },
   GitSignsAddLn = { bg = P.dark_grey },
   GitSignsChangeLn = { bg = P.bg_highlight },
   GitSignsDeleteLn = { bg = P.yellow },
+  GitSignsChangeDelete = { link = "GitSignsDelete" },
 
   -- diffview
   DiffAddedChar = { link = "DiffAdd" },
