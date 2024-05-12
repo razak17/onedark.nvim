@@ -1,6 +1,6 @@
 return {
-	TelescopeNormal = { link = "NormalFloat" },
-	TelescopeBorder = { link = "FloatBorder" },
+	TelescopeNormal = { link = "PickerResultsNormal" },
+	TelescopeBorder = { link = "PickerResultsBorder" },
 	TelescopeMatching = { link = "Directory" },
 	TelescopeMultiSelection = { link = "CursorLineNr" },
 	TelescopePromptNormal = { link = "PickerPromptNormal" },

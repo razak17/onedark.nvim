@@ -14,6 +14,7 @@ return {
 
   none = "NONE",
   bg = "#24283b",
+  -- bg = "#1a1824",
   bg_alt = "#373d48",
   bg_dark = "#1f2335",
   bg_term = "#504945",
