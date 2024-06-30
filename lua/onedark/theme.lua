@@ -357,6 +357,8 @@ local plugin_syntax = {
 	DapBreakpoint = { link = "DiagnosticError" },
 	DapBreakpointRejected = { link = "DiagnosticWarn" },
 	DapStopped = { link = "DiagnosticHint" },
+	DapUIFloatNormal = { link = "NormalFloat" },
+	DapUIFloatBorder = { link = "FloatBorder" },
 
 	-- vim-illuminate
 	IlluminatedWordText = { bg = P.base4, underline = false },
