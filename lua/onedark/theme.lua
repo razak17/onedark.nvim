@@ -377,7 +377,7 @@ local plugin_syntax = {
 	Headline3 = { bg = "#a56106", fg = P.bg_visual },
 	Headline4 = { bg = "#7e0000", fg = P.bg_visual },
 	Headline5 = { bg = "#1e0b7b", fg = P.bg_visual },
-	Headline6 = { bg = "", fg = P.bg_visual },
+	Headline6 = { bg = "#560b7b", fg = P.bg_visual },
 	Dash = { fg = P.bg_visual, bold = true },
 
 	-- buffer-tabs
