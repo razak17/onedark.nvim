@@ -36,9 +36,9 @@ M.fill = {
 	NoicePopupmenuSelected = { bg = P.dark_pink, fg = P.fg },
 	NoiceFormatProgressDone = { link = "NoiceMini" },
 	NoiceFormatProgressTodo = { link = "NoiceMini" },
-	NoiceLspProgressClient = { fg = P.orange },
-	NoiceLspProgressSpinner = { fg = P.purple },
-	NoiceLspProgressTitle = { fg = P.comment },
+	NoiceLspProgressClient = { fg = P.orange, bg = P.none },
+	NoiceLspProgressSpinner = { fg = P.purple, bg = P.none },
+	NoiceLspProgressTitle = { fg = P.comment, bg = P.none },
 	NoiceFormatEvent = { fg = P.yellow },
 }
 
