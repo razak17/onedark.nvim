@@ -1,5 +1,3 @@
-local theme = require("onedark.theme")
-
 local M = {}
 
 local function set_hl(tbl)
@@ -46,28 +44,21 @@ function M.load()
 	vim.o.termguicolors = true
 	vim.g.colors_name = "onedark"
 
-	set_hl(theme.syntax)
+	local base = require("onedark.plugin.base")
+  local variant = require("onedark.plugin.variant")
+	local plugins = require("onedark.plugin.plugins")
+	local fzf_lua = require("onedark.plugin.fzf-lua")
+	local noice = require("onedark.plugin.noice")
+	local notify = require("onedark.plugin.notify")
+	local telescope = require("onedark.plugin.telescope")
 
-	local telescope = require("onedark.plugins.telescope")
-	local notify = require("onedark.plugins.notify")
-	local noice = require("onedark.plugins.noice")
-	local fzf_lua = require("onedark.plugins.fzf-lua")
-
-	set_hl(theme.plugin_syntax)
-
-	if vim.g.onedark_config.variant == "outline" then
-		set_hl(theme.plugins_outline_highlights)
-		set_hl(noice.outline)
-	end
-
-	if vim.g.onedark_config.variant == "fill" then
-		set_hl(theme.plugins_fill_highlights)
-		set_hl(noice.fill)
-	end
-
+	set_hl(base)
+  set_hl(variant)
+	set_hl(plugins)
 	set_hl(telescope)
 	set_hl(fzf_lua)
 	set_hl(notify)
+	set_hl(noice)
 
 	require("onedark.terminal").setup()
 end

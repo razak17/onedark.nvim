@@ -1,3 +1,4 @@
+local config = vim.g.onedark_config
 local P = require("onedark.palette")
 local tint = require("onedark.utils").tint
 
@@ -79,4 +80,8 @@ M.outline = {
 	NoiceFormatEvent = { fg = P.yellow },
 }
 
-return M
+if config.variant == "outline" then
+	return M.outline
+else
+	return M.fill
+end
