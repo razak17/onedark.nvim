@@ -77,6 +77,8 @@ return {
 	NeoTreeExpander = { link = "NeoTreeIndentMarker" },
 	NeoTreeFileNameOpened = { fg = P.bg_visual, bold = true },
 	NeoTreeTabActive = { link = "FloatTitle" },
+  NeoTreeTabInactive = { link = 'Comment', italic = false },
+  NeoTreeTabSeparatorInactive = { link = 'WinSeparator' },
 
 	-- dashboard
 	DashboardShortCut = { fg = P.darker_blue },
