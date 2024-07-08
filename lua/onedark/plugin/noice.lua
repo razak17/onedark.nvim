@@ -7,7 +7,7 @@ local bg = tint(P.bg, -0.4)
 local M = {}
 
 M.fill = {
-	NoiceMini = { bg = bg, fg = P.orange },
+	NoiceMini = { fg = P.orange },
 	NoicePopupBaseGroup = { bg = P.bg, fg = P.bg },
 	NoicePopupWarnBaseGroup = { bg = P.bg, fg = P.bg },
 	NoicePopupInfoBaseGroup = { bg = P.bg, fg = P.bg },
@@ -37,9 +37,9 @@ M.fill = {
 	NoicePopupmenuSelected = { bg = P.dark_pink, fg = P.fg },
 	NoiceFormatProgressDone = { link = "NoiceMini" },
 	NoiceFormatProgressTodo = { link = "NoiceMini" },
-	NoiceLspProgressClient = { fg = P.orange, bg = P.none },
-	NoiceLspProgressSpinner = { fg = P.purple, bg = P.none },
-	NoiceLspProgressTitle = { fg = P.comment, bg = P.none },
+	NoiceLspProgressClient = { fg = P.orange },
+	NoiceLspProgressSpinner = { fg = P.purple },
+	NoiceLspProgressTitle = { fg = P.comment },
 	NoiceFormatEvent = { fg = P.yellow },
 }
 
