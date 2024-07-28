@@ -19,7 +19,7 @@ M.fill = {
 
 	-- picker
 	PickerBorder = { bg = P.bg, fg = P.bg },
-	PickerSelection = { bg = tint(P.bg, 0.4) },
+	PickerSelection = { link = "CursorLine" },
 
 	PickerPromptNormal = { fg = P.fg, bg = P.bg },
 	PickerPromptBorder = { link = "PickerBorder" },
