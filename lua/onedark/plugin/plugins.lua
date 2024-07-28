@@ -167,4 +167,7 @@ return {
 	BufferManagerBorder = { link = "FloatBorder" },
   -- mini.icons
   MiniIconsGrey = { link = 'Comment' },
+
+  -- nvim-web-devicons
+  DevIconDefault = {link = 'Comment' }
 }
