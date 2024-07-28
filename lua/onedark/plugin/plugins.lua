@@ -6,6 +6,11 @@ return {
 	-- Plugins
 	------------------------------------------------------------------------------
 
+	-- lazy
+	lazyH1 = { link = "Visual" },
+	LazyButton = { link = "Folded" },
+	LazyButtonActive = { link = "Visual" },
+
 	-- virtcolumn
 	VirtColumn = { link = "FloatBorder" },
 
