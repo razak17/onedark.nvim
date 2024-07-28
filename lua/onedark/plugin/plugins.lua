@@ -165,4 +165,6 @@ return {
 	-- buffer-manager
 	BufferManagerTitle = { link = "FloatTitle" },
 	BufferManagerBorder = { link = "FloatBorder" },
+  -- mini.icons
+  MiniIconsGrey = { link = 'Comment' },
 }
