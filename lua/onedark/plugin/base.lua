@@ -197,6 +197,8 @@ return {
 	["@lsp.type.class.typescript"] = { fg = P.tsx_green, bg = P.none },
 	["@lsp.type.interface.typescript"] = { fg = P.ts_green, bg = P.none },
 	["@lsp.type.variable.typescript"] = { fg = P.tsx_green, bg = P.none },
+  ['@markup.heading'] = {bold = true, fg = "#89ddff"},
+  ['@markup.list.unchecked'] = {bold = true, fg = "#89ddff"},
 	------------------------------------------------------------------------------
 	-- Semantic tokens
 	------------------------------------------------------------------------------
