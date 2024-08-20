@@ -11,7 +11,7 @@ return {
 	CursorColumn = { link = "Normal" },
 	FoldColumn = { fg = P.base5, bg = tint(P.bg, -0.3) },
 	VertSplit = { fg = tint(P.purple, -0.6) },
-	Folded= { bg = tint(P.bg_highlight, -0.1) },
+	Folded = { bg = tint(P.bg_highlight, -0.1) },
 	EndOfBuffer = { fg = P.bg, bg = P.none },
 	Visual = { bg = tint(P.blue, -0.6) },
 	VisualNOS = { link = "Visual" },
@@ -47,7 +47,7 @@ return {
 	Whitespace = { fg = P.base4 },
 	SpecialKey = { fg = P.bg },
 	Pmenu = { fg = P.fg, bg = P.bg },
-	PmenuSel = { link = 'CursorLine' },
+	PmenuSel = { link = "CursorLine" },
 	PmenuSelBold = { fg = P.base0, bg = P.blue },
 	PmenuSbar = { fg = P.none, bg = P.dark_grey },
 	PmenuThumb = { bg = tint(P.dark_grey, 0.4) },
@@ -197,8 +197,8 @@ return {
 	["@lsp.type.class.typescript"] = { fg = P.tsx_green, bg = P.none },
 	["@lsp.type.interface.typescript"] = { fg = P.ts_green, bg = P.none },
 	["@lsp.type.variable.typescript"] = { fg = P.tsx_green, bg = P.none },
-  ['@markup.heading'] = {bold = true, fg = "#89ddff"},
-  ['@markup.list.unchecked'] = {bold = true, fg = "#89ddff"},
+	["@markup.heading"] = { bold = true, fg = "#89ddff" },
+	["@markup.list.unchecked"] = { bold = true, fg = "#89ddff" },
 	------------------------------------------------------------------------------
 	-- Semantic tokens
 	------------------------------------------------------------------------------

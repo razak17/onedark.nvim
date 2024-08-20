@@ -16,7 +16,7 @@ return {
 	TelescopePreviewNormal = { link = "PickerPreviewNormal" },
 	TelescopePreviewBorder = { link = "PickerPreviewBorder" },
 	TelescopePreviewTitle = { link = "PickerPreviewTitle" },
-  TelescopeResultsComment = { link = 'Directory' },
-  TelescopePathSeparator = { link = 'Directory' },
-  TelescopeResultsSpecialComment = { link = 'Comment' },
+	TelescopeResultsComment = { link = "Directory" },
+	TelescopePathSeparator = { link = "Directory" },
+	TelescopeResultsSpecialComment = { link = "Comment" },
 }

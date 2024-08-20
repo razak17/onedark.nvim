@@ -82,8 +82,8 @@ return {
 	NeoTreeExpander = { link = "NeoTreeIndentMarker" },
 	NeoTreeFileNameOpened = { fg = P.bg_visual, bold = true },
 	NeoTreeTabActive = { link = "FloatTitle" },
-  NeoTreeTabInactive = { link = 'Comment', italic = false },
-  NeoTreeTabSeparatorInactive = { link = 'WinSeparator' },
+	NeoTreeTabInactive = { link = "Comment", italic = false },
+	NeoTreeTabSeparatorInactive = { link = "WinSeparator" },
 
 	-- dashboard
 	DashboardShortCut = { fg = P.darker_blue },
@@ -165,9 +165,9 @@ return {
 	-- buffer-manager
 	BufferManagerTitle = { link = "FloatTitle" },
 	BufferManagerBorder = { link = "FloatBorder" },
-  -- mini.icons
-  MiniIconsGrey = { link = 'Comment' },
+	-- mini.icons
+	MiniIconsGrey = { link = "Comment" },
 
-  -- nvim-web-devicons
-  DevIconDefault = {link = 'Comment' }
+	-- nvim-web-devicons
+	DevIconDefault = { link = "Comment" },
 }

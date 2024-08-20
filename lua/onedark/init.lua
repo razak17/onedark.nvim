@@ -45,7 +45,7 @@ function M.load()
 	vim.g.colors_name = "onedark"
 
 	local base = require("onedark.plugin.base")
-  local variant = require("onedark.plugin.variant")
+	local variant = require("onedark.plugin.variant")
 	local plugins = require("onedark.plugin.plugins")
 	local fzf_lua = require("onedark.plugin.fzf-lua")
 	local noice = require("onedark.plugin.noice")
@@ -53,7 +53,7 @@ function M.load()
 	local telescope = require("onedark.plugin.telescope")
 
 	set_hl(base)
-  set_hl(variant)
+	set_hl(variant)
 	set_hl(plugins)
 	set_hl(telescope)
 	set_hl(fzf_lua)
