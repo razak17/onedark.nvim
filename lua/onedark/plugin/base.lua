@@ -199,6 +199,11 @@ return {
 	["@lsp.type.variable.typescript"] = { fg = P.tsx_green, bg = P.none },
 	["@markup.heading"] = { bold = true, fg = "#89ddff" },
 	["@markup.list.unchecked"] = { bold = true, fg = "#89ddff" },
+	["@text.title.gitcommit"] = { fg = "#89ddff" },
+	gitcommitComment = { fg = tint(P.comment, 0.5) },
+	["@comment.gitcommit"] = { fg = tint(P.comment, 0.5) },
+	["@text.gitcommit"] = { fg = tint(P.comment, 0.5) },
+	["@text.uri.gitcommit"] = { link = 'URL' },
 	------------------------------------------------------------------------------
 	-- Semantic tokens
 	------------------------------------------------------------------------------

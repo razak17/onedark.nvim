@@ -60,6 +60,7 @@ return {
 	-- neogit
 	NeogitDiffAdd = { link = "DiffAdd" },
 	NeogitDiffDelete = { link = "DiffDelete" },
+  NeogitFold = { fg = "#89ddff" } ,
 
 	-- trouble
 	TroubleCount = { bg = P.bg_alt, fg = P.pink },
