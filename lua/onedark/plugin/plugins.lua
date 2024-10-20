@@ -11,6 +11,11 @@ return {
 	LazyButton = { link = "Folded" },
 	LazyButtonActive = { link = "Visual" },
 
+-- mason
+	MasonHeader = { link = "FloatTitle" },
+	MasonMutedBlock = { link = "Folded" },
+	MasonHighlightBlockBold = { link = "Visual" },
+
 	-- virtcolumn
 	VirtColumn = { link = "FloatBorder" },
 
