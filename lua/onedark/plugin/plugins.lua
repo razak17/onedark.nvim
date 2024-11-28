@@ -21,6 +21,7 @@ return {
 
 	-- winbar
 	Winbar = { fg = P.light_gray },
+	WinbarNC = { fg = tint(P.light_gray, -0.3) },
 	WinbarCrumb = { link = "Winbar" },
 	WinbarDirectory = { fg = P.cyan },
 
