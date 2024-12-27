@@ -67,6 +67,7 @@ return {
 	cursor = "#1d7c78",
 	ansi_green = "#3FDAA4",
 	turquoise = "#25B0BC",
+  light_turquoise = "#73daca",
 
 	cyan = "#A5D6FF",
 	term_blue = "#3a81c3",

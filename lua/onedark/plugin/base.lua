@@ -114,7 +114,7 @@ return {
 	Ignore = { fg = P.grey },
 	Underlined = { fg = P.none, underline = true },
 	Variable = { fg = tint(P.pale_red, -0.07) },
-	Property = { fg = P.pale_red },
+	Property = { fg = P.light_turquoise },
 	Field = { fg = P.pale_red },
 	Method = { fg = P.green },
 	Class = { fg = P.blue },
