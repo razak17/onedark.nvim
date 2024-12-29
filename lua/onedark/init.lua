@@ -51,6 +51,7 @@ function M.load()
 	local noice = require("onedark.plugin.noice")
 	local notify = require("onedark.plugin.notify")
 	local telescope = require("onedark.plugin.telescope")
+	local snacks = require("onedark.plugin.snacks")
 
 	set_hl(base)
 	set_hl(variant)
@@ -59,6 +60,7 @@ function M.load()
 	set_hl(fzf_lua)
 	set_hl(notify)
 	set_hl(noice)
+	set_hl(snacks)
 
 	require("onedark.terminal").setup()
 end
