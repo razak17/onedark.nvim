@@ -1,35 +1,35 @@
 return {
-	SnacksNotifierInfo = { link = "NotifyINFOBody" },
-	SnacksNotifierDebug = { link = "NotifyDEBUGBody" },
-	SnacksNotifierTrace = { link = "NotifyTRACEBody" },
-	SnacksNotifierError = { link = "NotifyERRORBody" },
-	SnacksNotifierWarn = { link = "NotifyWARNBody" },
-
-	SnacksNotifierTitleInfo = { link = "NotifyINFOTitle" },
-	SnacksNotifierTitleDebug = { link = "NotifyDEBUGTitle" },
-	SnacksNotifierTitleTrace = { link = "NotifyTRACETitle" },
-	SnacksNotifierTitleError = { link = "NotifyERRORTitle" },
-	SnacksNotifierTitleWarn = { link = "NotifyWarnTitle" },
-
-	SnacksNotifierIconInfo = { link = "NotifyINFOIcon" },
-	SnacksNotifierIconDebug = { link = "NotifyDEBUGIcon" },
-	SnacksNotifierIconTrace = { link = "NotifyTRACEIcon" },
-	SnacksNotifierIconError = { link = "NotifyERRORBody" },
-	SnacksNotifierIconWarn = { link = "NotifyWARNBody" },
-
-	SnacksNotifierBorderInfo = { link = "PopupINFOBorder" },
-	SnacksNotifierBorderDebug = { link = "NotifyDEBUGBorder" },
-	SnacksNotifierBorderTrace = { link = "PopupTRACEBorder" },
-	SnacksNotifierBorderError = { link = "PopupERRORBorder" },
-	SnacksNotifierBorderWarn = { link = "PopupWARNBorder" },
-
-	SnacksNotifierFooterInfo = { link = "NotifyINFOBody" },
-	SnacksNotifierFooterDebug = { link = "NotifyDEBUGBody" },
-	SnacksNotifierFooterTrace = { link = "NotifyTRACEBody" },
-	SnacksNotifierFooterError = { link = "NotifyERRORBody" },
-	SnacksNotifierFooterWarn = { link = "NotifyWARNBody" },
-
 	SnacksNotifierHistory = { link = "NormalFloat" },
 	SnacksNotifierHistoryTitle = { link = "FloatTitle" },
 	SnacksNotifierHistoryDateTime = { link = "Debug" },
+
+	SnacksNotifierInfo = { link = "PopupNormal" },
+	SnacksNotifierDebug = { link = "PopupNormal" },
+	SnacksNotifierTrace = { link = "PopupNormal" },
+	SnacksNotifierError = { link = "PopupNormal" },
+	SnacksNotifierWarn = { link = "PopupNormal" },
+
+	SnacksNotifierFooterInfo = { link = "PopupNormal" },
+	SnacksNotifierFooterDebug = { link = "PopupNormal" },
+	SnacksNotifierFooterTrace = { link = "PopupNormal" },
+	SnacksNotifierFooterError = { link = "PopupNormal" },
+	SnacksNotifierFooterWarn = { link = "PopupNormal" },
+
+	SnacksNotifierTitleError = { link = "DiagnosticError" },
+	SnacksNotifierTitleWarn = { link = "DiagnosticWarn" },
+	SnacksNotifierTitleInfo = { link = "DiagnosticInfo" },
+	SnacksNotifierTitleDebug = { link = "DiagnosticHint" },
+	SnacksNotifierTitleTrace = { link = "DiagnosticHint" },
+
+	SnacksNotifierIconError = { link = "DiagnosticError" },
+	SnacksNotifierIconWarn = { link = "DiagnosticWarn" },
+	SnacksNotifierIconInfo = { link = "DiagnosticInfo" },
+	SnacksNotifierIconDebug = { link = "DiagnosticHint" },
+	SnacksNotifierIconTrace = { link = "DiagnosticHint" },
+
+	SnacksNotifierBorderError = { link = "PopupErrorBorder" },
+	SnacksNotifierBorderWarn = { link = "PopupWarnBorder" },
+	SnacksNotifierBorderInfo = { link = "PopupInfoBorder" },
+	SnacksNotifierBorderDebug = { link = "PopupDebugBorder" },
+	SnacksNotifierBorderTrace = { link = "PopupTraceBorder" },
 }
