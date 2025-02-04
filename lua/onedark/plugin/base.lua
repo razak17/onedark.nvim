@@ -31,7 +31,7 @@ return {
 	CursorLineNr = { fg = tint(P.blue, -0.3), bold = true },
 	diffAdded = { bg = P.diff_add },
 	DiffAdd = { link = "diffAdded" },
-	DiffChange = { bg = P.diff_change },
+	DiffChange = { bg = tint(P.bg_highlight, -0.3) },
 	diffRemoved = { bg = P.diff_delete },
 	DiffDelete = { link = "diffRemoved" },
 	DiffDeleteAlt = { bg = P.diff_delete_alt },
@@ -180,7 +180,7 @@ return {
 	["@namespace"] = { fg = P.cyan, bg = P.none },
 	["@string.special.symbol"] = { fg = P.fg, bg = P.none },
 	["@variable.member"] = { fg = P.pale_red, bg = P.none },
-	["@property"] = { link = 'Property' },
+	["@property"] = { link = "Property" },
 	["@variable.parameter"] = { fg = P.red, bg = P.none },
 	["@parameter.reference"] = { fg = P.red, bg = P.none },
 	["@attribute"] = { fg = P.red, bg = P.none },
@@ -203,7 +203,7 @@ return {
 	gitcommitComment = { fg = tint(P.comment, 0.5) },
 	["@comment.gitcommit"] = { fg = tint(P.comment, 0.5) },
 	["@text.gitcommit"] = { fg = tint(P.comment, 0.5) },
-	["@text.uri.gitcommit"] = { link = 'URL' },
+	["@text.uri.gitcommit"] = { link = "URL" },
 	------------------------------------------------------------------------------
 	-- Semantic tokens
 	------------------------------------------------------------------------------
