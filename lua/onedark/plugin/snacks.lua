@@ -32,4 +32,8 @@ return {
 	SnacksNotifierBorderInfo = { link = "PopupInfoBorder" },
 	SnacksNotifierBorderDebug = { link = "PopupDebugBorder" },
 	SnacksNotifierBorderTrace = { link = "PopupTraceBorder" },
+
+	SnacksInputNormal = { link = "PickerPromptNormal" },
+	SnacksInputBorder = { link = "PickerPromptBorder" },
+	SnacksInputTitle = { link = "PickerPromptTitle" },
 }
