@@ -36,4 +36,8 @@ return {
 	SnacksInputNormal = { link = "PickerPromptNormal" },
 	SnacksInputBorder = { link = "PickerPromptBorder" },
 	SnacksInputTitle = { link = "PickerPromptTitle" },
+
+	SnacksIndent = { link = "IndentBlanklineChar" },
+  SnacksIndentBlank = { link = "SnacksIndent" },
+  SnacksIndentScope = { fg = tint(P.orange, -0.25) },
 }
