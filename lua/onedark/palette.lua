@@ -82,13 +82,16 @@ return {
 
 	grey = "#928374",
 	dark_grey = "#3E4556",
+	gray_alt = "#4f5258",
 	black = "#000000",
 
-	diff_add = "#008700",
+  diff_add = "#005523",
+  -- diff_add = "#008700",
 	-- diff_add = "#143609",
 	diff_delete = "#5e0000",
 	diff_delete_alt = "#390403",
 	diff_change = "#005f00",
 	-- diff_change = "#143609",
-	diff_text = "#185b12",
+	-- diff_text = "#185b12",
+	diff_text = "#007373",
 }

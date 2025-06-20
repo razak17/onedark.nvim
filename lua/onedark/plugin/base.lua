@@ -31,7 +31,7 @@ return {
 	CursorLineNr = { fg = tint(P.blue, -0.3), bold = true },
 	diffAdded = { bg = P.diff_add },
 	DiffAdd = { link = "diffAdded" },
-	DiffChange = { bg = tint(P.bg_highlight, -0.3) },
+	DiffChange = { bg = P.gray_alt },
 	diffRemoved = { bg = P.diff_delete },
 	DiffDelete = { link = "diffRemoved" },
 	DiffDeleteAlt = { bg = P.diff_delete_alt },
