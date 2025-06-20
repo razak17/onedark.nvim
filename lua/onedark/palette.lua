@@ -23,6 +23,7 @@ return {
 	-- fg_dark = "#3b4261",
 	fg_dark = "#828bb8",
 	comment = "#565f89",
+	comment_alt = "#636da6",
 	bg_highlight = "#292e42",
 	bg_visual = "#b3deef",
 
