@@ -1,3 +1,6 @@
+local P = require("onedark.palette")
+local tint = require("onedark.utils").tint
+
 return {
 	SnacksNotifierHistory = { link = "NormalFloat" },
 	SnacksNotifierHistoryTitle = { link = "FloatTitle" },
@@ -37,7 +40,8 @@ return {
 	SnacksInputBorder = { link = "PickerPromptBorder" },
 	SnacksInputTitle = { link = "PickerPromptTitle" },
 
-	SnacksIndent = { link = "IndentBlanklineChar" },
-  SnacksIndentBlank = { link = "SnacksIndent" },
-  SnacksIndentScope = { fg = tint(P.orange, -0.25) },
+	-- SnacksIndent = { link = "IndentBlanklineChar" },
+	-- SnacksIndentBlank = { link = "SnacksIndent" },
+	-- SnacksIndentChunk = { link = "IndentBlanklineContextChar" },
+	-- SnacksIndentScope = { link = "SnacksIndentChunk" },
 }
