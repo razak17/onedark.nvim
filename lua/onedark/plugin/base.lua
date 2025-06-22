@@ -13,7 +13,7 @@ return {
 	VertSplit = { fg = tint(P.purple, -0.6) },
 	Folded = { bg = tint(P.bg_highlight, -0.1) },
 	EndOfBuffer = { fg = P.bg, bg = P.none },
-	Visual = { bg = tint(P.blue, -0.5) },
+	Visual = { bg = tint(P.blue, -0.60) },
 	VisualNOS = { link = "Visual" },
 	Search = { link = "Visual" },
 	CurSearch = { link = "Search" },
