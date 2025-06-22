@@ -3,7 +3,7 @@ local fmt = string.format
 
 --- Change the brightness of a color, negative numbers darken and positive ones brighten
 ---@param color string A hex color
----@param percent float a negative number darkens and a positive one brightens
+---@param percent number a negative number darkens and a positive one brightens
 function M.tint(color, percent)
 	assert(color and percent, "cannot alter a color without specifying a color and percentage")
 	local r = tonumber(color:sub(2, 3), 16)
