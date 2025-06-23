@@ -34,6 +34,7 @@ M.fill = {
 	NoiceConfirmBorder = { bg = P.bg, fg = P.bg },
 	NoiceFormatConfirm = { link = "DiagnosticVirtualTextHint" },
 	NoiceFormatConfirmDefault = { link = "DiagnosticVirtualTextError" },
+	NoiceFormatConfirmDefaultDev = { link = "DiagnosticVirtualTextInfo" },
 	NoicePopupmenuSelected = { bg = P.dark_pink, fg = P.fg },
 	NoiceFormatProgressDone = { link = "NoiceMini" },
 	NoiceFormatProgressTodo = { link = "NoiceMini" },
