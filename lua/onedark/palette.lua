@@ -22,8 +22,8 @@ return {
 	fg_alt = "#5B6268",
 	-- fg_dark = "#3b4261",
 	fg_dark = "#828bb8",
-	comment = "#565f89",
-	comment_alt = "#636da6",
+	comment = "#636da6",
+  dim = "#565f89",
 	bg_highlight = "#292e42",
 	bg_visual = "#b3deef",
 
