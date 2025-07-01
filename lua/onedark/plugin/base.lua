@@ -16,7 +16,7 @@ return {
 	Visual = { bg = tint(P.blue, -0.60) },
 	VisualNOS = { link = "Visual" },
 	Search = { link = "Visual" },
-	CurSearch = { bg = tint(P.orange, -0.25), fg = P.black },
+	CurSearch = { bg = tint(P.orange, 0.15), fg = P.fg_dark },
 	IncSearch = { link = "CurSearch" },
 	CursorLine = { bg = tint(P.purple, -0.65), underline = false },
 	ColorColumn = { link = "Folded" },
