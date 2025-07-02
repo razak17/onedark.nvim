@@ -136,7 +136,7 @@ return {
 
 	-- headlines
 	Headline = { bg = tint(P.bg, -0.6), bold = true, italic = true },
-	CodeBlock = { bg = tint(P.bg_highlight, -0.35), bold = true, italic = true },
+	CodeBlock = { bg = tint(P.bg_highlight, -0.20), bold = true, italic = true },
 	Headline1 = { bg = "#295715", fg = P.bg_visual },
 	Headline2 = { bg = "#8d8200", fg = P.bg_visual },
 	Headline3 = { bg = "#a56106", fg = P.bg_visual },
