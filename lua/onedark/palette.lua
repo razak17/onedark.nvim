@@ -93,7 +93,10 @@ return {
 	diff_delete = "#5e0000",
 	diff_delete_alt = "#390403",
 	diff_change = "#005f00",
+	-- diff_change = "#1c4328",
 	-- diff_change = "#143609",
-	-- diff_text = "#185b12",
+  diff_change_inline = "#782d2d",
+  -- diff_change_inline = "#1c562c",
 	diff_text = "#007373",
+	-- diff_text = "#185b12",
 }
