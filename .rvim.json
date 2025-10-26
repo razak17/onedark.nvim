@@ -1,5 +1,8 @@
 {
-  "colorscheme": "onedark",
+  "colorscheme": {
+    "name": "onedark",
+    "variant": "fill"
+  },
   "ui": {
     "transparent": {
       "enable": false
