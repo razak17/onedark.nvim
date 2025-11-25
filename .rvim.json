@@ -1,5 +1,6 @@
 {
   "colorscheme": {
+    "use_in_minimal_mode": true,
     "name": "onedark",
     "variant": "fill"
   },
