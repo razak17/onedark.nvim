@@ -77,7 +77,7 @@ return {
 	TabLineFill = { bg = P.bg },
 	WinSeparator = { link = "VertSplit" },
 	URL = { fg = P.brighter_blue, underline = true },
-	FloatTitle = { link = "WildMenu" },
+	FloatTitle = { fg = P.bg_visual, bg = tint(P.purple, -0.6) },
 	------------------------------------------------------------------------------
 	-- Lang
 	------------------------------------------------------------------------------
