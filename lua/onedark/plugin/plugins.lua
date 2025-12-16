@@ -11,7 +11,7 @@ return {
 	LazyButton = { link = "Folded" },
 	LazyButtonActive = { link = "Visual" },
 
--- mason
+	-- mason
 	MasonHeader = { link = "FloatTitle" },
 	MasonMutedBlock = { link = "Folded" },
 	MasonHighlightBlockBold = { link = "Visual" },
@@ -64,9 +64,12 @@ return {
 	DiffviewFilePanelPath = { link = "Directory" },
 
 	-- neogit
+	NeogitNormalFloat = { link = "NormalFloat" },
+	NeogitFloatBorder = { link = "FloatBorder" },
+	NeogitWinSeparator = { link = "WinSeparator" },
 	NeogitDiffAdd = { link = "DiffAdd" },
 	NeogitDiffDelete = { link = "DiffDelete" },
-  NeogitFold = { fg = "#89ddff" } ,
+	NeogitFold = { fg = "#89ddff" },
 
 	-- trouble
 	TroubleCount = { bg = P.bg_alt, fg = P.pink },
