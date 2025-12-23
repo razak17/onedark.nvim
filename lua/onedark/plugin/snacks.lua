@@ -39,6 +39,7 @@ return {
 	SnacksInputNormal = { link = "PickerPromptNormal" },
 	SnacksInputBorder = { link = "PickerPromptBorder" },
 	SnacksInputTitle = { link = "PickerPromptTitle" },
+	SnacksPickerToggle = { link = "PickerToggle" },
 
 	-- SnacksIndent = { link = "IndentBlanklineChar" },
 	-- SnacksIndentBlank = { link = "SnacksIndent" },

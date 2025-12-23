@@ -32,6 +32,7 @@ M.fill = {
 	PickerPreviewNormal = { bg = tint(P.bg, -0.2), fg = P.fg },
 	PickerPreviewBorder = { bg = tint(P.bg, -0.2), fg = tint(P.bg, -0.2) },
 	PickerPreviewTitle = { link = "FloatTitle" },
+	PickerToggle = { bg = tint(P.purple, -0.6), fg = P.blue, italic = true },
 }
 
 M.outline = {
