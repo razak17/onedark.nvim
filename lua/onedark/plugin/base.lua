@@ -48,7 +48,7 @@ return {
 	NonText = { link = "Comment" },
 	Dim = { fg = P.dim },
 	Whitespace = { fg = P.base4 },
-	SpecialKey = { fg = P.bg },
+	SpecialKey = { fg = P.comment },
 	Pmenu = { fg = P.fg, bg = P.bg },
 	PmenuSel = { link = "CursorLine" },
 	PmenuSelBold = { fg = P.base0, bg = P.blue },
