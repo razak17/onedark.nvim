@@ -41,6 +41,18 @@ vim.cmd.colorscheme('onedark')
 -- Get onedark color
 local onedark =  require('onedark').onedark.yellow/teal/fg/bg
 ```
+## Theme development
+
+With `mini.hipatterns` loaded, enable inline palette swatches, highlight group
+previews, and reload-on-save while editing this checkout:
+
+```lua
+require("onedark.dev").setup()
+```
+
+The project's `.lazy.lua` enables this automatically when using lazy.nvim.
+Other package managers can call `setup()` after loading `mini.hipatterns`.
+
 ## Screenshots
 
 ![2023-11-06_234230_584238053](https://github.com/razak17/nvim/assets/52210954/403209bd-ecd9-4a95-8b4e-e05a3adda427)
